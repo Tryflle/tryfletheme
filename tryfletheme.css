@@ -265,4 +265,14 @@
     .circleIconButton_db6521 {
         background-color: var(--background-middleshade);
     }
+    /* Polls */
+    .container_a1531c.normalStylesDefault_b5cb3c.pollContainer_b558d0 {
+        background-color: var(--background-middleshade);
+    }
+    .answerInner_cf2c85.currentlyVoting_cf2c85 {
+        background-color: var(--background-third);
+    }
+    .votePercentageBar_cf2c85 {
+        background-color: var(--accent-secondary);
+    }
 }
