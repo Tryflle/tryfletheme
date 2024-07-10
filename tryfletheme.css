@@ -39,6 +39,8 @@
     --bg-overlay-selected: #3f3b50;
     --background-modifier-selected: #1a1823;
     --background-modifier-active: #ffffff31;
+    --mention-background: #9c77c8a7;
+    --mention-foreground: #dcc1ff;
     /* Own variables (yes this matters and i hate it) */
     --background-third: #21202c;
     --background-dark: #131020;
@@ -258,5 +260,9 @@
     .scrollableContainer_d0696b:focus-within .contents_dd4f85.button_cecf00.button_d0696b,
     .scrollableContainer_d0696b:hover .contents_dd4f85.button_cecf00.button_d0696b {
         display: block;
+    }
+    /* Explore and join server buttons */
+    .circleIconButton_db6521 {
+        background-color: var(--background-middleshade);
     }
 }
