@@ -9,7 +9,9 @@
     /* Discord varibles */
     --background-tertiary: #131020;
     --background-secondary: #1a1823;
+    --background-primary: #1a1823;
     --background-secondary-alt: #131020;
+    --green-360: #d696d7;
     --text-link: #c29df1;
     --background-accent: #131020;
     --brand-experiment-80a: #fa5ffd91;
@@ -20,14 +22,14 @@
     --brand-360: #b593e0;
     --text-normal: #ece4ea;
     --brand-500: #b593e0;
-    --interactive-active: #f3bce6;
+    --interactive-active: hsl(314, 70%, 85%);
     --text-muted: #e9c4eb;
     --channels-default: white;
-    --modal-background: white;
+    --modal-background: #131020;
     --background-mentioned: #252836;
     --border-mentioned: #544764;
     --background-mentioned-hover: #2f3344;
-    --modal-footer-background: white;
+    --modal-footer-background: #131020;
     --channel-text-area-placeholder: #21202c;
     --scrollbar-thin-thumb: transparent;
     --scrollbar-thin-track: transparent;
@@ -47,6 +49,7 @@
     --background-middleshade: #1a1823;
     --hover-color: #f3bce6;
     --active-channel-or-dm: #333241;
+    --mentioned-badge-color: #b07cf4;
 
 
     /* Main stuff, and random other stuff idk what I was thinking when I started this I'll fix it later */
@@ -88,7 +91,8 @@
         display: none;
     }
 
-    button.button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85.sizeSmall_dd4f85.grow_dd4f85:hover {
+    button.button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85.sizeSmall_dd4f85.grow_dd4f85:hover,
+    .button.button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85.sizeSmall_dd4f85.grow_dd4f85:focus-within {
         background-color: var(--hover-color);
     }
 
@@ -150,7 +154,7 @@
     }
 
     /*Pings*/
-    .bar_c10249.unreadMentionsBar_fea3ef {
+    .bar_c10249.unreadMentionsBar_fea3ef, .bar_eba0ba.mentionsBar_eba0ba {
         background-color: var(--hover-color);
     }
 
@@ -274,5 +278,30 @@
     }
     .votePercentageBar_cf2c85 {
         background-color: var(--accent-secondary);
+    }
+    /* Right click menu */
+    .menu_d90b3d.flexible_d90b3d {
+        border-radius: 10px;
+    }
+    /* Mentions Badge */
+    [class^=numberBadge_] {
+       background-color: var(--mentioned-badge-color) !important;
+    }
+    /* VC Stuff */
+    svg.ping_c02c63 path:nth-of-type(2) {
+        display: none;
+        /* This hides the second voice connected badge if you are using NoUglyIcons */
+    }
+    .button_adcaac.buttonColor_adcaac.button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85.sizeSmall_dd4f85.fullWidth_dd4f85.grow_dd4f85.button_adcaac.buttonColor_adcaac:hover .lottieIcon_f73ef7 {
+        fill: white !important;
+    }
+    .rtcConnectionStatusConnected_c02c63.rtcConnectionStatusLabel_c02c63.status_dcb18f.hoverRoll_c0d6c6.disabled_c0d6c6 {
+        color: var(--accent-secondary);
+    }
+    svg.status_a5cd29 path {
+        fill: white;
+    }
+    .root_dd069c {
+        background-color: var(--background-middleshade);
     }
 }
