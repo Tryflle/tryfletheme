@@ -5,7 +5,7 @@
  * @version 0.0.1
  */
 
- :root {
+:root {
     /* Discord varibles */
     --background-tertiary: #131020;
     --background-secondary: #1a1823;
@@ -58,7 +58,8 @@
     }
 
     #vc-spotify-titles,
-    .colorStandard_fbc755.size14_fb468f.default_b89ec7.formText_b89ec7.vc-spotify-ellipoverflow.modeDefault_b89ec7, .colorStandard_fbc755  {
+    .colorStandard_fbc755.size14_fb468f.default_b89ec7.formText_b89ec7.vc-spotify-ellipoverflow.modeDefault_b89ec7,
+    .colorStandard_fbc755 {
         background-color: var(--background-dark) !important;
     }
 
@@ -117,7 +118,9 @@
         background-color: var(--background-middleshade)
     }
 
-    .categoryItemDefaultCategory_dfa278.categoryItem_dfa278.categoryItemDefaultCategorySelected_dfa278, .stickerCategory_a7a485.stickerCategoryGeneric_a7a485.stickerCategoryGenericSelected_a7a485, .header_c6ee36 {
+    .categoryItemDefaultCategory_dfa278.categoryItem_dfa278.categoryItemDefaultCategorySelected_dfa278,
+    .stickerCategory_a7a485.stickerCategoryGeneric_a7a485.stickerCategoryGenericSelected_a7a485,
+    .header_c6ee36 {
         background-color: var(--background-third);
     }
 
@@ -161,54 +164,99 @@
         border-left: 8px solid transparent;
         border-radius: 0px;
     }
+
     .scroller_e2e187 {
         background-color: var(--background-third);
     }
+
     /* Pins */
     .header_ac90a2 {
         background-color: var(--background-dark);
     }
+
     .messagesPopout_ac90a2 {
         background-color: var(--background-middleshade);
     }
+
     .messageGroupCozy_ac90a2 {
         background-color: var(--background-third);
     }
+
     /* Inbox */
     .row_fd8ff1 {
         background-color: var(--background-third);
     }
-    .friendRequestsButton_c0c071, .button_e258f5.secondary_e258f5.size32_e258f5 {
+
+    .friendRequestsButton_c0c071,
+    .button_e258f5.secondary_e258f5.size32_e258f5 {
         background-color: var(--background-middleshade);
     }
+
     /* Threads */
     .header_e664f3 {
         background-color: var(--background-dark);
     }
-    .list_c6aa12.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8, .input_c18ec9 {
+
+    .list_c6aa12.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8,
+    .input_c18ec9 {
         background-color: var(--background-middleshade);
     }
+
     .container_acb8b3 {
         background-color: var(--background-third);
     }
+
     /* Friends */
     .peopleColumn_c2739c {
         background-color: var(--background-third);
     }
-    .theme-dark.container_e44302.themed_e44302, .scroller_bf550a.thin_c49869.scrollerBase_c49869, .container_bf550a {
+
+    .theme-dark.container_e44302.themed_e44302,
+    .scroller_bf550a.thin_c49869.scrollerBase_c49869,
+    .container_bf550a {
         background-color: var(--background-middleshade);
     }
+
     .itemCard_f02fcf.wrapper_cd82a7.outer_c0f6a6.padded_c0f6a6.interactive_c0f6a6 {
         background-color: var(--background-dark);
     }
+
     /* Nitro gifting */
-    .flex_bba380.horizontalReverse_bba380.justifyBetween_ec1a20.alignCenter_ec1a20.noWrap_ec1a20.footer_f9a4c9.footerSeparator_f9a4c9, .stepBodyCustomGift_d439ef, .content_f9a4c9.body_bf926b.thin_c49869.scrollerBase_c49869 {
+    .flex_bba380.horizontalReverse_bba380.justifyBetween_ec1a20.alignCenter_ec1a20.noWrap_ec1a20.footer_f9a4c9.footerSeparator_f9a4c9,
+    .stepBodyCustomGift_d439ef,
+    .content_f9a4c9.body_bf926b.thin_c49869.scrollerBase_c49869 {
         background-color: var(--background-middleshade);
     }
+
     .flex_bba380.horizontal_bba380.justifyStart_ec1a20.alignCenter_ec1a20.noWrap_ec1a20.header_f9a4c9.modalHeaderCustomGift_a27f2f {
         background-color: var(--background-dark) !important;
     }
+
     .markup_f8f345.editor_a552a6.slateTextArea_e52116.fontSize16Padding_d0696b.textAreaWithoutAttachmentButton_d0696b.textAreaCustomGift_d0696b {
         background-color: var(--background-third);
+    }
+
+    /* Chat Area, partially stolen from Tokyo Night my beloved */
+    .scrollableContainer_d0696b {
+        border-radius: 5px;
+        border-bottom: 2px var(--background-middleshade) solid;
+        transition: border-color .15s ease;
+    }
+
+    .scrollableContainer_d0696b:hover,
+    .scrollableContainer_d0696b:focus-within {
+        border-bottom-color: var(--accent-secondary);
+    }
+
+    .spriteContainer_af14ca,
+    .contents_dd4f85.button_cecf00.button_d0696b {
+        display: none;
+    }
+
+    .scrollableContainer_d0696b:focus-within .spriteContainer_af14ca,
+    .scrollableContainer_d0696b:hover .spriteContainer_af14ca,
+    .scrollableContainer_d0696b:focus-within .contents_dd4f85.button_cecf00.button_d0696b,
+    .scrollableContainer_d0696b:hover .contents_dd4f85.button_cecf00.button_d0696b {
+        display: block;
     }
 }
