@@ -76,6 +76,7 @@
 
     .title_a7d72e,
     .scrollableContainer_d0696b.themedBackground_d0696b,
+    [class*=container_fc4f04],
     [class*="contentRegionScroller"] {
         background-color: var(--background-middleshade);
     }
@@ -87,6 +88,7 @@
     }
 
     div.children_e44302:after,
+    div.children_fc4f04:after,
     form.form_a7d72e:before {
         display: none;
     }
