@@ -50,6 +50,8 @@
     --hover-color: #f3bce6;
     --active-channel-or-dm: #333241;
     --mentioned-badge-color: #b07cf4;
+    --status-danger: #d696d7;
+    --brand-80a: #fa5ffd54;
 
 
     /* Main stuff, and random other stuff idk what I was thinking when I started this I'll fix it later */
@@ -122,6 +124,7 @@
     .input_effbe2,
     .unicodeShortcut_dfa278,
     .standardStickerShortcut_a7a485,
+    .inner_effbe2.thin_c49869.scrollerBase_c49869,
     [class*=inspector] {
         background-color: var(--background-middleshade)
     }
@@ -178,10 +181,10 @@
     }
 
     /* Pins */
-    .header_ac90a2 {
+    .header_ac90a2,
+    .footer_ac90a2 {
         background-color: var(--background-dark);
     }
-
     .messagesPopout_ac90a2 {
         background-color: var(--background-middleshade);
     }
@@ -191,12 +194,16 @@
     }
 
     /* Inbox */
-    .row_fd8ff1 {
+    .row_fd8ff1,
+    .scroller_f1c3d9.thin_c49869.scrollerBase_c49869 {
         background-color: var(--background-third);
     }
 
     .friendRequestsButton_c0c071,
-    .button_e258f5.secondary_e258f5.size32_e258f5 {
+    .button_e258f5.secondary_e258f5.size32_e258f5,
+    .messages_c06487,
+    .channelHeader_f3978e,
+    .container_d331f1.forumPost_c53f2f {
         background-color: var(--background-middleshade);
     }
 
@@ -204,9 +211,10 @@
     .header_e664f3 {
         background-color: var(--background-dark);
     }
-
     .list_c6aa12.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8,
-    .input_c18ec9 {
+    .input_c18ec9,
+    .list_c6aa12,
+    .inner_c18ec9 {
         background-color: var(--background-middleshade);
     }
 
@@ -242,6 +250,10 @@
 
     .markup_f8f345.editor_a552a6.slateTextArea_e52116.fontSize16Padding_d0696b.textAreaWithoutAttachmentButton_d0696b.textAreaCustomGift_d0696b {
         background-color: var(--background-third);
+    }
+    
+    .categoryFadeBlurple_af1167:hover {
+        background-color: #fa5ffd25;
     }
 
     /* Chat Area, partially stolen from Tokyo Night my beloved */
@@ -304,6 +316,19 @@
         fill: white;
     }
     .root_dd069c {
+        background-color: var(--background-middleshade);
+    }
+    /* Forums */
+    .list_a6d69a.auto_eed6a8.scrollerBase_eed6a8,
+    .grid_a6d69a.thin_eed6a8.scrollerBase_eed6a8 {
+        background-color: var(--background-third);
+    }
+    .container_d331f1.mainCard_a6d69a,
+    .mainCard_a6d69a.header_a6d69a,
+    .inputDefault_f8bc55.input_f8bc55.textArea_a2b402.scrollbarDefault_c858ce.scrollbar_c858ce.title_c1668f,
+    .formContainer_c1668f,
+    .titleContainer_c1668f,
+    .container_a57509.card_a6d69a.mainCard_a6d69a {
         background-color: var(--background-middleshade);
     }
 }
