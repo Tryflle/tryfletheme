@@ -309,7 +309,8 @@
     .button_adcaac.buttonColor_adcaac.button_dd4f85.lookFilled_dd4f85.colorBrand_dd4f85.sizeSmall_dd4f85.fullWidth_dd4f85.grow_dd4f85.button_adcaac.buttonColor_adcaac:hover .lottieIcon_f73ef7 {
         fill: white !important;
     }
-    .rtcConnectionStatusConnected_c02c63.rtcConnectionStatusLabel_c02c63.status_dcb18f.hoverRoll_c0d6c6.disabled_c0d6c6 {
+    .rtcConnectionStatusConnected_c02c63.rtcConnectionStatusLabel_c02c63.status_dcb18f.hoverRoll_c0d6c6.disabled_c0d6c6,
+    .rtcConnectionStatusConnected_c02c63.rtcConnectionStatusLabel_c02c63.status_dcb18f.hoverRoll_e07331.disabled_e07331 {
         color: var(--accent-secondary);
     }
     svg.status_a5cd29 path {
