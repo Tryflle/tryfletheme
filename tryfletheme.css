@@ -20,6 +20,7 @@
     --interactive-normal: #ae97cd;
     --interactive-hover: #c29df1;
     --brand-360: #b593e0;
+    --brand-430: #b593e0;
     --text-normal: #ece4ea;
     --brand-500: #b593e0;
     --interactive-active: hsl(314, 70%, 85%);
@@ -126,13 +127,14 @@
     .standardStickerShortcut_a7a485,
     .inner_effbe2.thin_c49869.scrollerBase_c49869,
     [class*=inspector] {
-        background-color: var(--background-middleshade)
+        background-color: var(--background-middleshade);
     }
 
     .categoryItemDefaultCategory_dfa278.categoryItem_dfa278.categoryItemDefaultCategorySelected_dfa278,
     .stickerCategory_a7a485.stickerCategoryGeneric_a7a485.stickerCategoryGenericSelected_a7a485,
     .container_af1167.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8,
-    .header_c6ee36 {
+    .header_c6ee36,
+    .results_bad108.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8 {
         background-color: var(--background-third);
     }
 
