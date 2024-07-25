@@ -117,7 +117,8 @@
     .wrapper_e06857.header_a3bc57,
     .contentWrapper_af5dbb,
     .header_b56bbc,
-    .wrapper_e06857.packHeader_de4721 {
+    .wrapper_e06857.packHeader_de4721,
+    .noSearchResultsContainer_a3bc57 {
         background-color: var(--background-third);
     }
 
@@ -128,6 +129,9 @@
     .inner_effbe2.thin_c49869.scrollerBase_c49869,
     [class*=inspector] {
         background-color: var(--background-middleshade);
+    }
+    #gif-picker-tab-panel [class^=result_]:hover::after {
+        background: none !important;
     }
 
     .categoryItemDefaultCategory_dfa278.categoryItem_dfa278.categoryItemDefaultCategorySelected_dfa278,
