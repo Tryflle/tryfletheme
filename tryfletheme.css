@@ -66,8 +66,8 @@
     }
 
     #vc-spotify-titles,
-    .colorStandard_fbc755.size14_fb468f.default_b89ec7.formText_b89ec7.vc-spotify-ellipoverflow.modeDefault_b89ec7,
-    .colorStandard_fbc755 {
+    .colorStandard_d1aa77.size14_e8b2ab.default_b89ec7.formText_b89ec7.vc-spotify-progress-time.vc-spotify-time-right.modeDefault_b89ec7,
+    .colorStandard_d1aa77 {
         background-color: var(--background-dark) !important;
     }
 
@@ -138,7 +138,8 @@
     .stickerCategory_a7a485.stickerCategoryGeneric_a7a485.stickerCategoryGenericSelected_a7a485,
     .container_af1167.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8,
     .header_c6ee36,
-    .results_bad108.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8 {
+    .results_bad108.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8,
+    .noResults_bad108 {
         background-color: var(--background-third);
     }
 
