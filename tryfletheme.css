@@ -118,11 +118,14 @@
     .contentWrapper_af5dbb,
     .header_b56bbc,
     .wrapper_e06857.packHeader_de4721,
-    .noSearchResultsContainer_a3bc57 {
+    .noSearchResultsContainer_a3bc57,
+    .categorySection_a3bc57,
+    .scroller_d53d65.list_a3bc57.thin_c49869.scrollerBase_c49869,
+    .content_b56bbc {
         background-color: var(--background-third);
     }
 
-    .scroller_dcade6.none_c49869.scrollerBase_c49869,
+    .scroller_d53d65.none_c49869.scrollerBase_c49869,
     .input_effbe2,
     .unicodeShortcut_dfa278,
     .standardStickerShortcut_a7a485,
