@@ -322,7 +322,8 @@
         fill: white !important;
     }
     .rtcConnectionStatusConnected_c02c63.rtcConnectionStatusLabel_c02c63.status_dcb18f.hoverRoll_c0d6c6.disabled_c0d6c6,
-    .rtcConnectionStatusConnected_c02c63.rtcConnectionStatusLabel_c02c63.status_dcb18f.hoverRoll_e07331.disabled_e07331 {
+    .rtcConnectionStatusConnected_c02c63.rtcConnectionStatusLabel_c02c63.status_dcb18f.hoverRoll_e07331.disabled_e07331,
+    .rtcConnectionStatusConnected_c02c63.rtcConnectionStatusLabel_c02c63.hoverableStatus_dcb18f.hoverRoll_e07331 {
         color: var(--accent-secondary);
     }
     svg.status_a5cd29 path {
