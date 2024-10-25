@@ -78,7 +78,7 @@
     }
 
     .title_a7d72e,
-    .scrollableContainer_d0696b.themedBackground_d0696b,
+    .scrollableContainer_bdf0de.themedBackground_bdf0de,
     [class*=container_fc4f04],
     [class*="contentRegionScroller"] {
         background-color: var(--background-middleshade);
@@ -245,7 +245,7 @@
         background-color: var(--background-middleshade);
     }
 
-    .itemCard_f02fcf.wrapper_cd82a7.outer_c0f6a6.padded_c0f6a6.interactive_c0f6a6 {
+    .itemCard_f02fcf.wrapper_cd82a7.outer_ac5d22.padded_ac5d22.interactive_ac5d22 {
         background-color: var(--background-dark);
     }
 
@@ -269,28 +269,36 @@
     }
 
     /* Chat Area, partially stolen from Tokyo Night my beloved */
-    .scrollableContainer_d0696b {
+    .scrollableContainer_bdf0de {
         border-radius: 5px;
         border-bottom: 2px var(--background-middleshade) solid;
         transition: border-color .15s ease;
     }
 
-    .scrollableContainer_d0696b:hover,
-    .scrollableContainer_d0696b:focus-within {
-        border-bottom-color: var(--accent-secondary);
-    }
-
-    .spriteContainer_af14ca,
-    .contents_dd4f85.button_cecf00.button_d0696b {
+    [class*=channelAppLauncher_] {
         display: none;
     }
 
-    .scrollableContainer_d0696b:focus-within .spriteContainer_af14ca,
-    .scrollableContainer_d0696b:hover .spriteContainer_af14ca,
-    .scrollableContainer_d0696b:focus-within .contents_dd4f85.button_cecf00.button_d0696b,
-    .scrollableContainer_d0696b:hover .contents_dd4f85.button_cecf00.button_d0696b {
+    .scrollableContainer_bdf0de:hover,
+    .scrollableContainer_bdf0de:focus-within {
+        border-bottom-color: var(--accent-secondary);
+    }
+
+    button[aria-label="Open GIF picker"], button[aria-label="Open sticker picker"], button[aria-label="Select emoji"] {
+        display: none;
+    }
+
+    .scrollableContainer_bdf0de:focus-within .spriteContainer_af14ca,
+    .scrollableContainer_bdf0de:hover .spriteContainer_af14ca,
+    .scrollableContainer_bdf0de:focus-within .button_dd4f85.lookBlank_dd4f85.colorBrand_dd4f85.grow_dd4f85,
+    .scrollableContainer_bdf0de:hover .button_dd4f85.lookBlank_dd4f85.colorBrand_dd4f85.grow_dd4f85 {
         display: block;
     }
+
+    button[aria-label="Send a gift"] {
+        display: none !important;
+    }
+
     /* Explore and join server buttons */
     .circleIconButton_db6521 {
         background-color: var(--background-middleshade);
