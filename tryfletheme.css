@@ -39,6 +39,7 @@
     --scrollbar-auto-scrollbar-color-thumb: var(--scrollbar-auto-thumb);
     --scrollbar-auto-scrollbar-color-track: var(--scrollbar-auto-track);
     --channels-default: #c7b1e4;
+    --channel-icon: #c7b1e4;
     --bg-overlay-selected: #3f3b50;
     --background-modifier-selected: #1a1823;
     --background-modifier-active: #ffffff31;
@@ -244,6 +245,34 @@
     .container_bf550a {
         background-color: var(--background-middleshade);
     }
+    
+    path[d="M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5ZM4 5.5C4 4.67 4.67 4 5.5 4h13c.83 0 1.5.67 1.5 1.5v6c0 .83-.67 1.5-1.5 1.5h-2.65c-.5 0-.85.5-.85 1a3 3 0 1 1-6 0c0-.5-.35-1-.85-1H5.5A1.5 1.5 0 0 1 4 11.5v-6Z"],
+    path[d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.28-16c-.98 0-1.81.47-2.27 1.14A1 1 0 1 1 7.8 7.01 4.73 4.73 0 0 1 11.72 5c2.5 0 4.65 1.88 4.65 4.38 0 2.1-1.54 3.77-3.52 4.24l.14 1a1 1 0 0 1-1.98.27l-.28-2a1 1 0 0 1 .99-1.14c1.54 0 2.65-1.14 2.65-2.38 0-1.23-1.1-2.37-2.65-2.37ZM13 17.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0Z"],
+    path[d="M20.76 12.57c.4.3 1.23.13 1.24-.37V12a10 10 0 1 0-18.44 5.36c.12.19.1.44-.04.61l-2.07 2.37A1 1 0 0 0 2.2 22h10c.5-.01.67-.84.37-1.24A3 3 0 0 1 15 16h.5a.5.5 0 0 0 .5-.5V15a3 3 0 0 1 4.76-2.43Z"] {
+        fill: #ae97cd;
+    }
+    path[d="M5 2a3 3 0 0 0-3 3v14a3 3 0 0 0 3 3h14a3 3 0 0 0 3-3V5a3 3 0 0 0-3-3H5ZM4 5.5C4 4.67 4.67 4 5.5 4h13c.83 0 1.5.67 1.5 1.5v6c0 .83-.67 1.5-1.5 1.5h-2.65c-.5 0-.85.5-.85 1a3 3 0 1 1-6 0c0-.5-.35-1-.85-1H5.5A1.5 1.5 0 0 1 4 11.5v-6Z"]:hover,
+    path[d="M12 23a11 11 0 1 0 0-22 11 11 0 0 0 0 22Zm-.28-16c-.98 0-1.81.47-2.27 1.14A1 1 0 1 1 7.8 7.01 4.73 4.73 0 0 1 11.72 5c2.5 0 4.65 1.88 4.65 4.38 0 2.1-1.54 3.77-3.52 4.24l.14 1a1 1 0 0 1-1.98.27l-.28-2a1 1 0 0 1 .99-1.14c1.54 0 2.65-1.14 2.65-2.38 0-1.23-1.1-2.37-2.65-2.37ZM13 17.88a1.13 1.13 0 1 1-2.25 0 1.13 1.13 0 0 1 2.25 0Z"]:hover,
+    path[d="M20.76 12.57c.4.3 1.23.13 1.24-.37V12a10 10 0 1 0-18.44 5.36c.12.19.1.44-.04.61l-2.07 2.37A1 1 0 0 0 2.2 22h10c.5-.01.67-.84.37-1.24A3 3 0 0 1 15 16h.5a.5.5 0 0 0 .5-.5V15a3 3 0 0 1 4.76-2.43Z"]:hover {
+        fill: #d696d7;
+    }
+
+    .item_c2739c.addFriend_c2739c.item_a0.themed_a0 {
+        background-color: #d696d7;
+        color: white;
+    }
+    .item_c2739c.addFriend_c2739c.item_a0.themed_a0:hover {
+        background-color: var(--hover-color);
+    }
+
+    .flex_dc333f.vertical_ec1a20.justifyStart_ec1a20.alignStretch_ec1a20.noWrap_ec1a20.footer_e6af9c {
+        background-color: var(--background-middleshade);
+    }
+    
+    .scroller_e6af9c.thin_eed6a8.scrollerBase_eed6a8.fade_eed6a8,
+    .flex_dc333f.vertical_ec1a20.justifyStart_ec1a20.alignStretch_ec1a20.noWrap_ec1a20.header_f9a4c9 {
+        background-color: var(--background-third);
+    }
 
     .itemCard_f02fcf.wrapper_cd82a7.outer_ac5d22.padded_ac5d22.interactive_ac5d22 {
         background-color: var(--background-dark);
@@ -297,6 +326,11 @@
 
     button[aria-label="Send a gift"] {
         display: none !important;
+    }
+
+
+    [class^="cooldownWrapper_"] {
+        color: #ae97cd !important;
     }
 
     /* Explore and join server buttons */
