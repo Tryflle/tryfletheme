@@ -208,6 +208,11 @@
         background-color: var(--background-third);
     }
 
+    /* Search */
+    .scroller_a9e706.thin_d125d2.scrollerBase_d125d2 .message__02a39 {
+        background-color: var(--background-third);
+    }
+
     /* Pins */
     .header__45690,
     .footer__45690 {
