@@ -178,7 +178,9 @@
     /*Pinging and slash commands*/
     .scroller_dcade6,
     .scroller_d53d65.list_fe2299.thin_c49869.scrollerBase_c49869,
-    .wrapper_e06857.categoryHeader_fe2299 {
+    .wrapper_e06857.categoryHeader_fe2299,
+    .scroller_affa7e.list_d1405b.thin_d125d2.scrollerBase_d125d2,
+    .wrapper__14245.categoryHeader_d1405b {
         background-color: var(--background-third);
     }
 
