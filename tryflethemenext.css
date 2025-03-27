@@ -1,0 +1,190 @@
+/**
+ * @name Tryfle Theme Next
+ * @author Tryfle
+ * @description The updated version of the original Tryfle theme.
+ * @version 1.0.0
+ */
+
+/* Notes for those viewing this */
+/* This is the rewrite of my original theme, with a much cleaner codebase.*/
+/* I used many css snippets from the Vencord Discord server which accomplished many of the same goals that I had in order to save time. All respective authors are credited with their discord tag. Some are editted, sometimes majorly. */
+
+
+ :root {
+    /* -- Discord variables -- */
+    --brand-460: var(--accent-secondary); /* Voice Messages play icon */
+    --brand-500: #b593e0; /* Voice chat playing */
+    --channel-text-area-placeholder: #9887af; /* Chatbox container text color */
+    --bg-overlay-selected: #3f3b50; /* Channel selected */
+    --icon-secondary: #ae97cd !important; /* Nameplate icons (disabled) */
+    --interactive-normal: #ae97cd !important; /* Icons */
+    --interactive-hover: #c29df1 !important; /* Icons hover */
+    --status-danger: #d696d7; /* Several locations: New messages bar (small), unread channel icon, nameplate icons enabled, etc. */
+    --guildbar-avatar-size: 48px !important; /* Server icon size */
+    --button-secondary-background-hover: #a683b15d !important; /* Button hover color */
+    /* -- Theme variables -- */
+    --tt-bg-light: #21202c; /* Lightest background color */
+    --tt-bg-dark: #131020; /* Darkest background color */
+    --tt-bg-secondary: #1a1823; /* Secondary background color */
+    --tt-hover-color: #f3bce6; /* Hover color */
+    --tt-accent-color: #c29df1; /* Accent color */
+    
+    
+ }
+
+/* -- General -- */
+
+ /* -- Server list -- */
+
+ /* Fix icon sizes - Originally written by @scattagain */
+ :root {
+   --guildbar-avatar-size: 48px !important;
+}
+
+.visual-refresh nav[class*="guilds_"] {
+   margin: 0;
+   [class*="sidebar_"]:has(&)::after {
+       height: 0;
+   }
+   
+
+   [class*="listItem__"] {
+       defs > path {
+           d: path("M 0 0 H 200 V 200 H 0 Z");
+       }
+
+       [class*="childWrapper__"],
+       [class*="childWrapper__"] img,
+       [class*="icon_"],
+       [class*="circleIconButton__"] {
+           border-radius: 100% !important;
+           transition: border-radius 150ms;
+       }
+
+       [class*="selected__"] {
+           [class*="childWrapper__"],
+           [class*="childWrapper__"] img,
+           [class*="icon_"],
+           [class*="circleIconButton__"] {
+               border-radius: 20px !important;
+           }
+       }
+
+       svg {
+           top: 0px;
+           left: 0px;
+
+           foreignObject {
+               width: var(--guildbar-avatar-size);
+               height: var(--guildbar-avatar-size);
+               transform: translate(-4px, -4px);
+           }
+
+           &:not([class*="folderIcon__"]) > mask {
+               use[href$="-lower_badge_masks"] {
+                   transform: translate(8px, 8px);
+               }
+               use[href$="-upper_badge_masks"] {
+                   transform: translate(8px, 0px);
+               }
+           }
+       }
+
+       [class*=expandedFolderIconWrapper__] svg {
+           width: 24px;
+           height: 24px;
+       }
+   }
+
+   [class*="stack_"] {
+       & > div:not([class]):has([class*="listItem__"]) {
+           height: 48px !important;
+       }
+
+       [class*="isExpanded__"] & {
+           height: auto !important;
+       }
+   }
+}
+/* Server size within folders */
+.icon_f34534.guildIcon__48112.iconSizeMini_f34534.iconInactive_f34534 {
+   height: 90% !important;
+   width: 90% !important;
+}
+
+/* Discord icon size (Disabled due to cutting off edges. Looks much better though.) */
+/*[d="M19.73 4.87a18.2 18.2 0 0 0-4.6-1.44c-.21.4-.4.8-.58 1.21-1.69-.25-3.4-.25-5.1 0-.18-.41-.37-.82-.59-1.2-1.6.27-3.14.75-4.6 1.43A19.04 19.04 0 0 0 .96 17.7a18.43 18.43 0 0 0 5.63 2.87c.46-.62.86-1.28 1.2-1.98-.65-.25-1.29-.55-1.9-.92.17-.12.32-.24.47-.37 3.58 1.7 7.7 1.7 11.28 0l.46.37c-.6.36-1.25.67-1.9.92.35.7.75 1.35 1.2 1.98 2.03-.63 3.94-1.6 5.64-2.87.47-4.87-.78-9.09-3.3-12.83ZM8.3 15.12c-1.1 0-2-1.02-2-2.27 0-1.24.88-2.26 2-2.26s2.02 1.02 2 2.26c0 1.25-.89 2.27-2 2.27Zm7.4 0c-1.1 0-2-1.02-2-2.27 0-1.24.88-2.26 2-2.26s2.02 1.02 2 2.26c0 1.25-.88 2.27-2 2.27Z"] {
+   transform: scale(1.3);
+   transform-origin: center center;
+   object-fit: contain;
+}
+*/
+
+/* -- Spotify Player Modal -- */
+#vc-spotify-player {
+   background: var(--tt-bg-dark) !important;
+}
+.barFill_a562c8 {
+   background: var(--tt-accent-color) !important;
+}
+
+ /* -- Nameplate -- */
+
+/* Full nameplates (Uncomment if you want, make sure to comment out the other nameplate code)
+.visual-refresh [class^="panels_"] {
+   border-radius:0;
+   bottom:-0.1vh;
+   width:100%;
+   background-color: var(--tt-bg-dark);
+}
+*/
+/* Old style nameplate */
+.visual-refresh section.panels_c48ade {
+   margin-left: 72px;
+   bottom:-0.1vh;
+   width: calc(100% - var(--space-xs)*1.9 - 72px) !important;
+   .actionButtons_e131a9 button {
+     padding: 0;
+   }
+   background-color: var(--tt-bg-dark);
+ }
+ [class*="avatarWrapper__"] {
+   scale: 0.8;
+   border-radius: 100% !important;
+ }
+ 
+ nav.guilds_c48ade {
+   margin-bottom: 0 !important;
+ }
+
+/* Make the background of microphone & headphone icons invisible. */
+[aria-label="Mute"], [aria-label="Deafen"] {
+   background-color: var(--tt-bg-dark) !important;
+}
+[aria-label="Mute"]:hover, [aria-label="Deafen"]:hover {
+   background-color: var(--button-secondary-background-hover) !important;
+}
+ /* -- Chatbox container -- */
+
+
+/* Typing size!!! */
+.base_b88801 {
+   font-size: 14px !important;
+}
+ /* -- Member List -- */
+
+ /* Colored activity status based on well, status! - Originally written by @nspg911*/ 
+[class^=memberInner]:has(> div > [aria-label*="Online"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #43b581 }
+[class^=memberInner]:has(> div >[aria-label*=Idle]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f0b232 }
+[class^=memberInner]:has(> div > [aria-label*="Do Not Disturb"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f23f43 }
+[class^=memberInner]:has(> div > [aria-label*=Streaming]) [class^=subText] svg > path[fill="#23a55a"] { fill: #643da7 }
+
+[class^=memberInner] [class^=subText] svg > path[fill="#23a55a"] { fill: #747f8d }
+
+ /* Remove activity status menu. - Originally written by @lusaffi */
+[class*='membersGroup']:has([role=button]),
+[class*='member'] [class*='container']:has([class*='badges']) {
+  display: none;
+}
+
+/* -- Settings -- */
