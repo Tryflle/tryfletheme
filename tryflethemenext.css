@@ -9,7 +9,6 @@
 /* This is the rewrite of my original theme, with a much cleaner codebase.*/
 /* I used many css snippets from the Vencord Discord server which accomplished many of the same goals that I had in order to save time. All respective authors are credited with their discord tag. Some are editted, sometimes majorly. */
 
-
  .visual-refresh {
     /* -- Discord variables -- */
     --brand-460: var(--accent-secondary); /* Voice Messages play icon */
@@ -37,24 +36,58 @@
     --text-primary: hsl(314, 70%, 85%) !important; /* Channel text enabled color */
     --icon-primary: #c29df1 !important; /* Channel icon enabled color */
     --background-message-hover: #1F1F28 !important; /* Background color */
-    --text-secondary: #c29df1 !important;
+    --text-secondary: #c7b1e4 !important; /* Secondary text color */
+    --icon-tertiary: #ae97cd !important; /* Tertiary icon color */
+    --background-surface-higher: #1a1823 !important; /* Discord icon color top left when not in dms */
+    --bg-brand: #c29df1 !important; /* Discord icon color top left when in dms */
+    --text-tertiary: #c7b1e4  !important; /* Tertiary text color */
+    --text-default: hsl(314, 70%, 85%) !important; /* Active DM */
+    --background-mod-subtle: #1a1823 !important;
+    --blurple-50: #b593e0 !important; /* Blurple */
+    --message-reacted-background: #c19df160 !important;
+    --mention-background: #9c77c8a7 !important; /* Mentions */
+    --mention-foreground: #dcc1ff !important; /* Mentions */
+    --text-brand: #b593e0 !important;
+    --button-filled-brand-background-hover: #7b639b !important;
+    --status-positive: #c29df1 !important; /* Most green text */
+    --green-360: #b593e0 !important;
     /* -- Theme variables -- */
     --tt-bg-light: #21202c; /* Lightest background color */
     --tt-bg-dark: #131020; /* Darkest background color */
     --tt-bg-secondary: #1a1823; /* Secondary background color */
     --tt-hover-color: #f3bce6; /* Hover color */
     --tt-accent-color: #c29df1; /* Accent color */
+}
+* {
+    /* Other annoying Discord variables that require being in a *. */
+    --text-danger: #c29df1 !important;
+    --text-feedback-critical: #c29df1 !important;
+    --background-feedback-critical: #d696d741 !important;
+}
 
-    
-    
- }
+/* ⋰⁙⁂--- TODO ---⁂⁙⋱
+1. Fix inconsistencies with old version:
+   A. Interactive active is now icon-primary, which is shared in too many places. This includes the channel icon AND all enabled icons, which were previously pink.
+2. Fix loading not being fully themed. *Hard to select*
+*/
 
 /* -- General -- */
+
+/* Pinned DMS - Vencord */
+.headerText__99e7c {
+    color: var(--tt-accent-color);
+}
 
 /* Background */
 .messagesWrapper__36d07 {
     background-color: var(--tt-bg-light) !important;
 }
+.searchBar__97492 {
+    background-color: var(--tt-bg-dark) !important;
+}
+.wrapper_fc8177.cozy_fc8177, .scrollerContent__36d07.content_d125d2, .chatContent_f75fb0 {
+    background-color: var(--tt-bg-light) !important;
+} 
 
 .itemsContainer_ef3116, .title_c38106 {
     background-color: var(--tt-bg-dark) !important;
@@ -65,16 +98,44 @@
 .title_f75fb0.container__9293f.themed__9293f {
     background-color: var(--tt-bg-secondary) !important;
 }
-
 /* Embeds */
 .embedWrapper_b7e1cb.embedFull__623de.embed__623de.markup__75297 {
     background-color: var(--tt-bg-secondary) !important;
     border-radius: 5px !important;
 }
 
+/* Context Menu */
+.scroller_c1e9c4.thin_d125d2.scrollerBase_d125d2 {
+    background-color: var(--tt-bg-secondary);
+}
+
 /* Mentions */
 [class*="mentioned__5126c"]:before {
     background-color: var(--tt-accent-color);
+}
+
+/* -- Pickers -- */
+/* Emoji */
+.contentWrapper__08434,.header_c0e32c,.scroller_affa7e.list_c656ac.thin_d125d2.scrollerBase_d125d2,.wrapper__14245.header_c656ac, .wrapper__29ebd {
+    background-color: var(--tt-bg-light) !important;
+}
+.searchBar_c0e32c.container_a45028.medium_a45028, .scroller_affa7e.none_d125d2.scrollerBase_d125d2,.inspector_aeaaeb.inspector_c0e32c,.unicodeShortcut_b9ee0c {
+    background-color: var(--tt-bg-secondary) !important;
+}
+/* Sticker */
+.header__8ef02,.wrapper__14245.packHeader_e94b8c {
+    background-color: var(--tt-bg-light) !important;
+}
+.inspector_aeaaeb,.standardStickerShortcut__3ad28,.container_a45028.medium_a45028 {
+    background-color: var(--tt-bg-secondary) !important;
+}
+/* Gifs */
+.nav__08434,.header_fed6d3,.container_d02962.thin__99f8c.scrollerBase__99f8c.fade__99f8c,.results__2dc39.thin__99f8c.scrollerBase__99f8c.fade__99f8c,[class^="noResults_"] {
+    background-color: var(--tt-bg-light) !important;
+}
+/* This removes the blur! --V */
+#gif-picker-tab-panel [class^=result_]:hover::after {
+    background: none !important;
 }
 
  /* -- Server list -- */
@@ -89,8 +150,6 @@
    [class*="sidebar_"]:has(&)::after {
        height: 0;
    }
-   
-
    [class*="listItem__"] {
        defs > path {
            d: path("M 0 0 H 200 V 200 H 0 Z");
@@ -112,7 +171,6 @@
                border-radius: 20px !important;
            }
        }
-
        svg {
            top: 0px;
            left: 0px;
@@ -148,6 +206,10 @@
            height: auto !important;
        }
    }
+}
+[class="text-sm/medium_cf4812 title_b6c092"] {
+    color: white !important;
+    font-weight: 520 !important;
 }
 /* Server size within folders */
 .icon_f34534.guildIcon__48112.iconSizeMini_f34534.iconInactive_f34534 {
@@ -188,7 +250,7 @@
       padding: 0;
     }
     >div:not(.wrapper_e131a9) {
-      height: 40px;
+      height: 50px;
       padding: 4px;
     }
     .avatar__37e49 {
@@ -215,9 +277,21 @@ nav.guilds_c48ade {
    background-color: var(--button-secondary-background-hover) !important;
 }
 
- /* -- Chatbox container -- */
-
-
+/* -- Chatbox container -- */
+/* Commands */
+.scroller_affa7e.list_d1405b.thin_d125d2.scrollerBase_d125d2,.wrapper__14245.categoryHeader_d1405b,.optionPillValue__1464f {
+    background-color: var(--tt-bg-light) !important;
+    border-radius:10px;
+}
+.inlineElement__1464f.optionPill__1464f {
+    border-radius:10px;
+    border: 0px;
+    background-color:var(--tt-bg-secondary);
+}
+.optionPillKey__1464f {
+    background-color: var(--tt-bg-dark) !important;
+    border-radius:10px;
+}
 /* Typing size and color */
 .base_b88801 {
    font-size: 14px !important;
@@ -228,7 +302,7 @@ nav.guilds_c48ade {
 .form_f75fb0.formWithLoadedChatInput_f75fb0 {
     background-color: var(--tt-bg-light) !important;
 }
-/* Chatbox itself */
+/* Chatbox Tokyo Night style effect + Color */
 .scrollableContainer__74017.themedBackground__74017 {
     border-radius: 5px;
     border-bottom: 2px var(--tt-bg-secondary) solid !important;
@@ -236,6 +310,70 @@ nav.guilds_c48ade {
     background-color: var(--tt-bg-secondary) !important;
 }
 
+/* Chatbox revert emoji size */
+.spriteContainer__04eed {
+    --custom-emoji-sprite-size: 24px !important;
+}
+.attachButton__0923f.attachButton__0923f {
+    padding: 10px 16px;
+    position: sticky;
+    top: 0;
+  }
+  .attachButtonInner__0923f {
+    height: 24px;
+    > svg {
+      width: 24px;
+      height: 24px;
+    }
+  }
+
+  button[aria-label="Open GIF picker"],
+  button[aria-label="Open sticker picker"] {
+    padding: 6px !important;
+    width: 32px !important;
+    height: 32px !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-sizing: border-box !important;
+  }
+  
+  button[aria-label="Open GIF picker"] svg,
+  button[aria-label="Open sticker picker"] svg {
+    width: 20px !important;
+    height: 20px !important;
+    transform: scale(1.2) !important;
+  }
+  /* Chat box size tweak */
+  .channelTextArea_f75fb0 {
+    margin-left: 6px;
+    margin-right: 6px;
+    margin-bottom: 20px;
+
+    .inner__74017 {
+        margin-top: -6px;
+        margin-bottom: -6px;
+        margin-right: 10px;
+        --custom-channel-textarea-text-area-max-height: 58px;
+        --custom-channel-textarea-text-area-height: var(
+            --custom-channel-textarea-text-area-max-height
+        );
+    }
+
+    .slateTextArea_ec4baf {
+        margin-left: 4px;
+    }
+
+    .scrollableContainer__74017 {
+        overflow: hidden;
+    }
+
+  .channelTextArea_f75fb0.channelTextArea__74017 {
+    border: 0px;
+  }
+}
+
+  
+  
 /* Icons within the chatbox */
 [class*=channelAppLauncher_] {
     display: none !important;
@@ -247,16 +385,16 @@ nav.guilds_c48ade {
 }
 
 button[aria-label="Open GIF picker"], button[aria-label="Open sticker picker"], button[aria-label="Select emoji"] {
-    display: none;
+    display: none !important;
 }
 .scrollableContainer__74017:focus-within .sprite__04eed.spriteGreyscale__04eed.active__04eed,
 .scrollableContainer__74017:hover .sprite__04eed.spriteGreyscale__04eed.active__04eed,
 .scrollableContainer__74017:focus-within .button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5,
 .scrollableContainer__74017:hover .button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5 {
-    display: block;
+    display: flex !important;
 }
 
-button[aria-label="Send a gift"] {
+button[aria-label="Send a gift"], #app-mount > div.appAsidePanelWrapper_a3002d > div.notAppAsidePanel_a3002d > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > form > div > div > div > div > div.buttons__74017 > button {
     display: none !important;
 }
 
@@ -281,3 +419,21 @@ button[aria-label="Send a gift"] {
 }
 
 /* -- Settings -- */
+
+/* Background */
+.contentColumn__23e6b.contentColumnDefault__23e6b,.contentRegionScroller__23e6b.contentRegionShownSidebar__23e6b.auto_d125d2.scrollerBase_d125d2, .bar_c38106.systemBar_c38106.fixed_c38106.show_c38106 {
+    background-color: var(--tt-bg-secondary);
+}
+
+/* Checkbox Setting Enabled */
+.container__87bf1.checked__87bf1 {
+    background-color: #b593e0 !important;
+}
+
+[d="M4.08643 11.0903L5.67742 9.49929L9.4485 13.2704L7.85751 14.8614L4.08643 11.0903Z"],[d="M7.89561 14.8538L6.30462 13.2629L14.3099 5.25755L15.9009 6.84854L7.89561 14.8538Z"] {
+    fill: #b593e0 !important;
+}
+/* Vencord stuff */
+.vc-addon-card,.vc-settings-quickActions-card.cardPrimary__73069.card__73069, .vc-plugins-info-card.cardPrimary__73069.card__73069 {
+    background-color: var(--tt-bg-dark) !important;
+}
