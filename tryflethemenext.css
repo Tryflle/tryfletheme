@@ -10,11 +10,18 @@
 /* I used many css snippets from the Vencord Discord server which accomplished many of the same goals that I had in order to save time. All respective authors are credited with their discord tag. Some are editted, sometimes majorly. */
 
 
- :root {
+ .visual-refresh {
     /* -- Discord variables -- */
     --brand-460: var(--accent-secondary); /* Voice Messages play icon */
     --brand-500: #b593e0; /* Voice chat playing */
     --channel-text-area-placeholder: #9887af; /* Chatbox container text color */
+    --chat-text-muted: #e9c4eb !important; /* Accent text color */
+    --chat-text-normal: #ece4ea !important; /* Chat text color */
+    --text-normal: #ece4ea !important; /* Text color */
+    --header-primary: white !important; /* Default name color and some other random elements. */
+    --background-base-lowest: #1a1823 !important; /* Background color */
+    --background-mentioned: #252836 !important; /* Mentioned color */
+    --background-mentioned-hover: #2f3344 !important; /* Mentioned hover color */
     --bg-overlay-selected: #3f3b50; /* Channel selected */
     --icon-secondary: #ae97cd !important; /* Nameplate icons (disabled) */
     --interactive-normal: #ae97cd !important; /* Icons */
@@ -22,17 +29,53 @@
     --status-danger: #d696d7; /* Several locations: New messages bar (small), unread channel icon, nameplate icons enabled, etc. */
     --guildbar-avatar-size: 48px !important; /* Server icon size */
     --button-secondary-background-hover: #a683b15d !important; /* Button hover color */
+    --channels-default: #c7b1e4 !important;  /* Channel name color */
+    --channel-icon: #c7b1e4 !important; /* Channel icon color */
+    --text-link: #c29df1 !important; /* Link color */
+    --text-muted: #e9c4eb !important; /* Muted text color */
+    --interactive-active: hsl(314, 70%, 85%) !important; /* Active text color */
+    --text-primary: hsl(314, 70%, 85%) !important; /* Channel text enabled color */
+    --icon-primary: #c29df1 !important; /* Channel icon enabled color */
+    --background-message-hover: #1F1F28 !important; /* Background color */
+    --text-secondary: #c29df1 !important;
     /* -- Theme variables -- */
     --tt-bg-light: #21202c; /* Lightest background color */
     --tt-bg-dark: #131020; /* Darkest background color */
     --tt-bg-secondary: #1a1823; /* Secondary background color */
     --tt-hover-color: #f3bce6; /* Hover color */
     --tt-accent-color: #c29df1; /* Accent color */
+
     
     
  }
 
 /* -- General -- */
+
+/* Background */
+.messagesWrapper__36d07 {
+    background-color: var(--tt-bg-light) !important;
+}
+
+.itemsContainer_ef3116, .title_c38106 {
+    background-color: var(--tt-bg-dark) !important;
+}
+.members_c8ffbb, .childContainer__91a9d, .member__5d473 {
+    background-color: var(--tt-bg-secondary);
+}
+.title_f75fb0.container__9293f.themed__9293f {
+    background-color: var(--tt-bg-secondary) !important;
+}
+
+/* Embeds */
+.embedWrapper_b7e1cb.embedFull__623de.embed__623de.markup__75297 {
+    background-color: var(--tt-bg-secondary) !important;
+    border-radius: 5px !important;
+}
+
+/* Mentions */
+[class*="mentioned__5126c"]:before {
+    background-color: var(--tt-accent-color);
+}
 
  /* -- Server list -- */
 
@@ -123,55 +166,105 @@
 /* -- Spotify Player Modal -- */
 #vc-spotify-player {
    background: var(--tt-bg-dark) !important;
+   height: 120px !important;
 }
 .barFill_a562c8 {
    background: var(--tt-accent-color) !important;
 }
+.vc-spotify-artist, .vc-spotify-album {
+    color: #c1cce5 !important;
+}
+
 
  /* -- Nameplate -- */
-
-/* Full nameplates (Uncomment if you want, make sure to comment out the other nameplate code)
-.visual-refresh [class^="panels_"] {
-   border-radius:0;
-   bottom:-0.1vh;
-   width:100%;
-   background-color: var(--tt-bg-dark);
-}
-*/
-/* Old style nameplate */
 .visual-refresh section.panels_c48ade {
-   margin-left: 72px;
-   bottom:-0.1vh;
-   width: calc(100% - var(--space-xs)*1.9 - 72px) !important;
-   .actionButtons_e131a9 button {
-     padding: 0;
-   }
-   background-color: var(--tt-bg-dark);
- }
- [class*="avatarWrapper__"] {
-   scale: 0.8;
-   border-radius: 100% !important;
- }
- 
- nav.guilds_c48ade {
-   margin-bottom: 0 !important;
- }
+    background-color: var(--tt-bg-dark);
+  }
 
+.visual-refresh section.panels_c48ade {
+    margin-left: var(--custom-guild-list-width);
+    width: calc(100% - var(--space-xs)*2 - var(--custom-guild-list-width));
+    .actionButtons_e131a9 button {
+      padding: 0;
+    }
+    >div:not(.wrapper_e131a9) {
+      height: 40px;
+      padding: 4px;
+    }
+    .avatar__37e49 {
+      scale: 0.8;
+    }
+  }
+  nav.guilds_c48ade {
+    margin-bottom: 0;
+  }
+  :root {
+    --custom-rtc-account-height: 0;
+  }
+  .sidebar_c48ade:after {
+    display: none;
+}
+nav.guilds_c48ade {
+  margin-bottom: 0 !important;
+}
 /* Make the background of microphone & headphone icons invisible. */
-[aria-label="Mute"], [aria-label="Deafen"] {
+[aria-label="Mute"], [aria-label="Deafen"], [aria-label="Enable Game Activity"] {
    background-color: var(--tt-bg-dark) !important;
 }
-[aria-label="Mute"]:hover, [aria-label="Deafen"]:hover {
+[aria-label="Mute"]:hover, [aria-label="Deafen"]:hover, [aria-label="Enable Game Activity"]:hover {
    background-color: var(--button-secondary-background-hover) !important;
 }
+
  /* -- Chatbox container -- */
 
 
-/* Typing size!!! */
+/* Typing size and color */
 .base_b88801 {
    font-size: 14px !important;
+   color: white !important;
 }
- /* -- Member List -- */
+
+/* Chatbox container background color */
+.form_f75fb0.formWithLoadedChatInput_f75fb0 {
+    background-color: var(--tt-bg-light) !important;
+}
+/* Chatbox itself */
+.scrollableContainer__74017.themedBackground__74017 {
+    border-radius: 5px;
+    border-bottom: 2px var(--tt-bg-secondary) solid !important;
+    transition: border-color .15s ease;
+    background-color: var(--tt-bg-secondary) !important;
+}
+
+/* Icons within the chatbox */
+[class*=channelAppLauncher_] {
+    display: none !important;
+}
+
+.scrollableContainer__74017:hover,
+.scrollableContainer__74017:focus-within {
+    border-bottom-color: var(--tt-accent-color) !important;
+}
+
+button[aria-label="Open GIF picker"], button[aria-label="Open sticker picker"], button[aria-label="Select emoji"] {
+    display: none;
+}
+.scrollableContainer__74017:focus-within .sprite__04eed.spriteGreyscale__04eed.active__04eed,
+.scrollableContainer__74017:hover .sprite__04eed.spriteGreyscale__04eed.active__04eed,
+.scrollableContainer__74017:focus-within .button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5,
+.scrollableContainer__74017:hover .button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5 {
+    display: block;
+}
+
+button[aria-label="Send a gift"] {
+    display: none !important;
+}
+
+/* Cooldown colored */
+[class^="cooldownWrapper_"] {
+    color: #ae97cd !important;
+}
+/* -- Member List -- */
 
  /* Colored activity status based on well, status! - Originally written by @nspg911*/ 
 [class^=memberInner]:has(> div > [aria-label*="Online"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #43b581 }
