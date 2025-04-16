@@ -30,7 +30,6 @@
     --button-secondary-background-hover: #a683b15d !important; /* Button hover color */
     --channels-default: #c7b1e4 !important;  /* Channel name color */
     --channel-icon: #c7b1e4 !important; /* Channel icon color */
-    --text-link: #c29df1 !important; /* Link color */
     --text-muted: #e9c4eb !important; /* Muted text color */
     --interactive-active: hsl(314, 70%, 85%) !important; /* Active text color */
     --text-primary: hsl(314, 70%, 85%) !important; /* Channel text enabled color */
@@ -63,15 +62,35 @@
     --text-danger: #c29df1 !important;
     --text-feedback-critical: #c29df1 !important;
     --background-feedback-critical: #d696d741 !important;
+    --background-primary: #1a1823 !important;
+    --text-link: #c29df1 !important; /* Link color */
+    --chat-text-muted: #e9c4eb !important; /* Accent text color */
 }
 
 /* ⋰⁙⁂--- TODO ---⁂⁙⋱
 1. Fix inconsistencies with old version:
    A. Interactive active is now icon-primary, which is shared in too many places. This includes the channel icon AND all enabled icons, which were previously pink.
-2. Fix loading not being fully themed. *Hard to select*
+2. Fix media
+3. Look into problem with smaller chatbar size after typing a message with multiple lines.
+4. Spotify: vc-spotify-button-icon vc-spotify-shuffle
+5. Voice chat
+6. Profiles
+7. ReviewDB and other vencord related things
+8. `` markdown.
+9. Automod
+10. Muted channels?
+11. Whatever else you find.
 */
 
 /* -- General -- */
+
+/* -- Pins -- */
+.messageGroupWrapper__45690 {
+    background-color: var(--tt-bg-light) !important;
+}
+.messagesPopout__45690.thin_d125d2.scrollerBase_d125d2,.header__45690 {
+    background-color: var(--tt-bg-secondary) !important;
+}
 
 /* Pinned DMS - Vencord */
 .headerText__99e7c {
@@ -79,7 +98,7 @@
 }
 
 /* Background */
-.messagesWrapper__36d07 {
+.messagesWrapper__36d07,.wrapper_d852db {
     background-color: var(--tt-bg-light) !important;
 }
 .searchBar__97492 {
@@ -87,7 +106,11 @@
 }
 .wrapper_fc8177.cozy_fc8177, .scrollerContent__36d07.content_d125d2, .chatContent_f75fb0 {
     background-color: var(--tt-bg-light) !important;
-} 
+}
+
+.actionBar_aa605f,.wrapper_f7ecac,.file__0ccae {
+    background-color: var(--tt-bg-secondary) !important;
+}
 
 .itemsContainer_ef3116, .title_c38106 {
     background-color: var(--tt-bg-dark) !important;
@@ -102,6 +125,16 @@
 .embedWrapper_b7e1cb.embedFull__623de.embed__623de.markup__75297 {
     background-color: var(--tt-bg-secondary) !important;
     border-radius: 5px !important;
+}
+/* Friends */
+.itemCard__7e549.wrapper__00943.outer_bf1984.padded_bf1984.interactive_bf1984 {
+    background-color: var(--tt-bg-dark) !important;
+}
+.theme-dark.theme-darker.images-dark.container__9293f.themed__9293f,.scroller__7d20c.thin_d125d2.scrollerBase_d125d2 {
+    background-color: var(--tt-bg-secondary) !important;
+}
+.peopleColumn__133bf {
+    background-color: var(--tt-bg-light) !important;
 }
 
 /* Context Menu */
@@ -279,7 +312,7 @@ nav.guilds_c48ade {
 
 /* -- Chatbox container -- */
 /* Commands */
-.scroller_affa7e.list_d1405b.thin_d125d2.scrollerBase_d125d2,.wrapper__14245.categoryHeader_d1405b,.optionPillValue__1464f {
+.scroller_affa7e.list_d1405b.thin_d125d2.scrollerBase_d125d2,.wrapper__14245.categoryHeader_d1405b,.optionPillValue__1464f,.scroller__6b0e0.thin_d125d2.scrollerBase_d125d2 {
     background-color: var(--tt-bg-light) !important;
     border-radius:10px;
 }
@@ -343,6 +376,12 @@ nav.guilds_c48ade {
     height: 20px !important;
     transform: scale(1.2) !important;
   }
+  /* Follow this channel... */
+  .wrapper__44df5 {
+    background-color: var(--tt-bg-secondary) !important;
+    border-radius: 5px !important;
+    padding: 10px !important;
+  }
   /* Chat box size tweak */
   .channelTextArea_f75fb0 {
     margin-left: 6px;
@@ -373,7 +412,13 @@ nav.guilds_c48ade {
 }
 
   
-  
+.channelAttachmentArea_b77158.scrollbarGhost__506b3.scrollbar__506b3 {
+    background-color: var(--tt-bg-secondary) !important;
+}
+
+.upload_aa605f {
+    background-color: var(--tt-bg-light) !important;
+}
 /* Icons within the chatbox */
 [class*=channelAppLauncher_] {
     display: none !important;
