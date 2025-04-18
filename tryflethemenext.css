@@ -43,13 +43,14 @@
     --text-default: hsl(314, 70%, 85%) !important; /* Active DM */
     --background-mod-subtle: #1a1823 !important;
     --blurple-50: #b593e0 !important; /* Blurple */
-    --message-reacted-background: #c19df160 !important;
+    --message-reacted-background: #c19df129 !important;
     --mention-background: #9c77c8a7 !important; /* Mentions */
     --mention-foreground: #dcc1ff !important; /* Mentions */
     --text-brand: #b593e0 !important;
     --button-filled-brand-background-hover: #7b639b !important;
     --status-positive: #c29df1 !important; /* Most green text */
     --green-360: #b593e0 !important;
+    --message-reacted-text: #b593e0 !important; /* Reacted text color */ 
     /* -- Theme variables -- */
     --tt-bg-light: #21202c; /* Lightest background color */
     --tt-bg-dark: #131020; /* Darkest background color */
@@ -65,36 +66,60 @@
     --background-primary: #1a1823 !important;
     --text-link: #c29df1 !important; /* Link color */
     --chat-text-muted: #e9c4eb !important; /* Accent text color */
+    --text-positive: #c29df1 !important; /* Most green text */
+    --vc-spotify-green: hsl(314, 70%, 85%);
+    --modal-background: #1a1823; /* Modal background color */
+    --modal-footer-background: #1a1823; /* Modal footer background color */
+    --background-surface-high: #1a1823 !important; /* Profiles */
+    --button-positive-background: #c29df1;
+    --button-positive-background-hover: #dac1fb;
+    
 }
 
 /* ⋰⁙⁂--- TODO ---⁂⁙⋱
 1. Fix inconsistencies with old version:
    A. Interactive active is now icon-primary, which is shared in too many places. This includes the channel icon AND all enabled icons, which were previously pink.
-2. Fix media
-3. Look into problem with smaller chatbar size after typing a message with multiple lines.
-4. Spotify: vc-spotify-button-icon vc-spotify-shuffle
-5. Voice chat
-6. Profiles
-7. ReviewDB and other vencord related things
-8. `` markdown.
-9. Automod
-10. Muted channels?
-11. Whatever else you find.
+2. Look into problem with smaller chatbar size after typing a message with multiple lines.
+3. Voice chat
+4. ReviewDB and other vencord related things
+5. `` markdown.
+6. Muted channels?
+7. Whatever else you find.
 */
 
 /* -- General -- */
 
-/* -- Pins -- */
+/* Add Friends to DM */
 .messageGroupWrapper__45690 {
     background-color: var(--tt-bg-light) !important;
 }
-.messagesPopout__45690.thin_d125d2.scrollerBase_d125d2,.header__45690 {
+
+/* Pins */
+.messagesPopout__45690.thin_d125d2.scrollerBase_d125d2,.header__45690,.footer__45690 {
     background-color: var(--tt-bg-secondary) !important;
 }
 
 /* Pinned DMS - Vencord */
 .headerText__99e7c {
     color: var(--tt-accent-color);
+}
+
+/* Emoji Information */
+.guildSection_d5cd2d {
+    background-color: var(--tt-bg-light) !important;
+}
+.emojiSection_d5cd2d {
+    background-color: var(--tt-bg-secondary) !important;
+}
+
+/* Automod messages */
+.message__5126c.cozyMessage__5126c.ephemeral__5126c.groupStart__5126c.automodMessage__5126c.wrapper_c19a55.cozy_c19a55.zalgo_c19a55 {
+    background-color: #703d7737;
+}
+
+/* Modal hover color */
+:where(.visual-refresh) .colorDefault_c1e9c4.focused_c1e9c4 {
+    --bg-mod-subtle: var(--tt-accent-color) !important;
 }
 
 /* Background */
@@ -120,6 +145,10 @@
 }
 .title_f75fb0.container__9293f.themed__9293f {
     background-color: var(--tt-bg-secondary) !important;
+}
+/* Add extra spacing between the text bar and messages */
+.scrollerContent__36d07.content_d125d2 {
+    margin-bottom: 7px !important;
 }
 /* Embeds */
 .embedWrapper_b7e1cb.embedFull__623de.embed__623de.markup__75297 {
@@ -269,7 +298,9 @@
 .vc-spotify-artist, .vc-spotify-album {
     color: #c1cce5 !important;
 }
-
+.vc-spotify-button.vc-spotify-shuffle.vc-spotify-shuffle-on {
+    background-color: #76128637;
+}
 
  /* -- Nameplate -- */
 .visual-refresh section.panels_c48ade {
@@ -301,6 +332,10 @@
 }
 nav.guilds_c48ade {
   margin-bottom: 0 !important;
+}
+/* Current Game */
+.panel__5dec7.activityPanel_c48ade {
+    background-color: var(--tt-bg-dark) !important;
 }
 /* Make the background of microphone & headphone icons invisible. */
 [aria-label="Mute"], [aria-label="Deafen"], [aria-label="Enable Game Activity"] {
