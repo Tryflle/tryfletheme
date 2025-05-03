@@ -9,8 +9,8 @@
 /* This is the rewrite of my original theme, with a much cleaner codebase.*/
 /* I used many css snippets from the Vencord Discord server which accomplished many of the same goals that I had in order to save time. All respective authors are credited with their discord tag. Some are editted, sometimes majorly. */
 
-/* quick fix to just * this, but it works and its midnight and i just got home and CANNOT be asked. */
- * {
+/* this is a quick fix, it's midnight. */
+body :not(#popout_15390):not(#popout_15390 *) :not(.userTagUsername__63ed3) {
     /* -- Discord variables -- */
     --brand-460: var(--accent-secondary); /* Voice Messages play icon */
     --brand-500: #b593e0; /* Voice chat playing */
