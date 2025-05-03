@@ -9,7 +9,8 @@
 /* This is the rewrite of my original theme, with a much cleaner codebase.*/
 /* I used many css snippets from the Vencord Discord server which accomplished many of the same goals that I had in order to save time. All respective authors are credited with their discord tag. Some are editted, sometimes majorly. */
 
- .visual-refresh {
+/* quick fix to just * this, but it works and its midnight and i just got home and CANNOT be asked. */
+ * {
     /* -- Discord variables -- */
     --brand-460: var(--accent-secondary); /* Voice Messages play icon */
     --brand-500: #b593e0; /* Voice chat playing */
@@ -124,6 +125,12 @@
 
 /* Background */
 .messagesWrapper__36d07,.wrapper_d852db {
+    background-color: var(--tt-bg-light) !important;
+}
+.scroller__99e7c.thin__99f8c.scrollerBase__99f8c.fade__99f8c {
+    background-color: var(--tt-bg-secondary) !important;
+}
+.sidebarList_c48ade.sidebarListRounded_c48ade {
     background-color: var(--tt-bg-light) !important;
 }
 .searchBar__97492 {
