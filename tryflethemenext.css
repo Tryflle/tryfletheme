@@ -9,8 +9,7 @@
 /* This is the rewrite of my original theme, with a much cleaner codebase.*/
 /* I used many css snippets from the Vencord Discord server which accomplished many of the same goals that I had in order to save time. All respective authors are credited with their discord tag. Some are editted, sometimes majorly. */
 
-/* this is a quick fix, it's midnight. */
-body :not([id*="popout_"]):not([id*="popout_"] *) {
+.visual-refresh, .visual-refresh .theme-darker {
     /* -- Discord variables -- */
     --brand-460: var(--accent-secondary); /* Voice Messages play icon */
     --brand-500: #b593e0; /* Voice chat playing */
@@ -59,8 +58,8 @@ body :not([id*="popout_"]):not([id*="popout_"] *) {
     --tt-hover-color: #f3bce6; /* Hover color */
     --tt-accent-color: #c29df1; /* Accent color */
 }
-* {
-    /* Other annoying Discord variables that require being in a *. */
+.visual-refresh .theme-darker, body {
+    /* -- Discord Variables (applied a bit differently) */
     --text-danger: #c29df1 !important;
     --text-feedback-critical: #c29df1 !important;
     --background-feedback-critical: #d696d741 !important;
@@ -68,13 +67,15 @@ body :not([id*="popout_"]):not([id*="popout_"] *) {
     --text-link: #c29df1 !important; /* Link color */
     --chat-text-muted: #e9c4eb !important; /* Accent text color */
     --text-positive: #c29df1 !important; /* Most green text */
-    --vc-spotify-green: hsl(314, 70%, 85%);
     --modal-background: #1a1823; /* Modal background color */
     --modal-footer-background: #1a1823; /* Modal footer background color */
     --background-surface-high: #1a1823 !important; /* Profiles */
     --button-positive-background: #c29df1;
     --button-positive-background-hover: #dac1fb;
-    
+}
+
+#vc-spotify-player {
+    --vc-spotify-green: hsl(314, 70%, 85%);
 }
 
 /* ⋰⁙⁂--- TODO ---⁂⁙⋱
