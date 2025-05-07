@@ -273,7 +273,7 @@ nav[class*="guilds_"] {
         }
     }
 
-    svg:not([class*="placeholderMask__"]) {
+    [class*="shiftSVG_"] {
         top: 0px;
         left: 0px;
 
@@ -365,7 +365,7 @@ nav[class*="guilds_"] {
             border-bottom-left-radius: 24px;
             border-bottom-right-radius: 24px;
         }
-
+        [class*="shiftSVG_"]
         [class*="stack_"] {
             height: auto !important;
             :last-child {
