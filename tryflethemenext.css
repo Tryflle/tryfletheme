@@ -365,7 +365,6 @@ nav[class*="guilds_"] {
             border-bottom-left-radius: 24px;
             border-bottom-right-radius: 24px;
         }
-        [class*="shiftSVG_"]
         [class*="stack_"] {
             height: auto !important;
             :last-child {
