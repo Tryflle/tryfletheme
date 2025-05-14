@@ -595,15 +595,7 @@ button[aria-label="Send a gift"], #app-mount > div.appAsidePanelWrapper_a3002d >
 }
 /* -- Member List -- */
 
- /* Colored activity status based on well, status! - Originally written by @nspg911*/ 
-[class^=memberInner]:has(> div > [aria-label*="Online"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #43b581 }
-[class^=memberInner]:has(> div >[aria-label*=Idle]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f0b232 }
-[class^=memberInner]:has(> div > [aria-label*="Do Not Disturb"]) [class^=subText] svg > path[fill="#23a55a"] { fill: #f23f43 }
-[class^=memberInner]:has(> div > [aria-label*=Streaming]) [class^=subText] svg > path[fill="#23a55a"] { fill: #643da7 }
-
-[class^=memberInner] [class^=subText] svg > path[fill="#23a55a"] { fill: #747f8d }
-
- /* Remove activity status menu. - Originally written by @lusaffi */
+ /* Remove activity status menu. - Originally written by @lusaffi: This is costly on resources. If you are experiencing slowdowns, comment this out. */
 [class*='membersGroup']:has([role=button]),
 [class*='member'] [class*='container']:has([class*='badges']) {
   display: none;
