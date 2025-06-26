@@ -60,6 +60,7 @@
 }
 .visual-refresh .theme-darker, body {
     /* -- Discord Variables (applied a bit differently) */
+    --text-default: #ece4ea !important; /* Chat text color */
     --text-danger: #c29df1 !important;
     --text-feedback-critical: #c29df1 !important;
     --background-feedback-critical: #d696d741 !important;
