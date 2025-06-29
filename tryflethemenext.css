@@ -125,6 +125,11 @@
     --bg-mod-subtle: var(--tt-accent-color) !important;
 }
 
+/* Button Background */
+[class*="focused_"] {
+    background-color: var(--button-secondary-background-hover) !important;
+}
+
 /* Background */
 .messagesWrapper__36d07,.wrapper_d852db {
     background-color: var(--tt-bg-light) !important;
