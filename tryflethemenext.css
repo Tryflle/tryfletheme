@@ -487,6 +487,7 @@ nav.guilds_c48ade {
 .form_f75fb0.formWithLoadedChatInput_f75fb0 {
     background-color: var(--tt-bg-light) !important;
 }
+
 /* Chatbox Tokyo Night style effect + Color */
 .scrollableContainer__74017.themedBackground__74017 {
     border-radius: 5px;
@@ -598,6 +599,11 @@ button[aria-label="Send a gift"], #app-mount > div.appAsidePanelWrapper_a3002d >
 /* Cooldown colored */
 [class^="cooldownWrapper_"] {
     color: #ae97cd !important;
+}
+
+/* Shift text 10px left because it looks weird due to a new change without it */
+.markup__75297.editor__1b31f.slateTextArea_ec4baf, .placeholder__1b31f.slateTextArea_ec4baf {
+  margin-left: -10px;
 }
 /* -- Member List -- */
 
