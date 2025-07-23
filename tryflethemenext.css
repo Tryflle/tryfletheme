@@ -585,10 +585,17 @@ nav.guilds_c48ade {
 button[aria-label="Open GIF picker"], button[aria-label="Open sticker picker"], button[aria-label="Select emoji"] {
     display: none !important;
 }
+
+.emojiButtonNormal__04eed.emojiButton__04eed.emojiButton__74017.button__74017 {
+    display: none;
+}
+
 .scrollableContainer__74017:focus-within .sprite__04eed.spriteGreyscale__04eed.active__04eed,
 .scrollableContainer__74017:hover .sprite__04eed.spriteGreyscale__04eed.active__04eed,
 .scrollableContainer__74017:focus-within .button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5,
-.scrollableContainer__74017:hover .button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5 {
+.scrollableContainer__74017:hover .button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5,
+.scrollableContainer__74017:focus-within .emojiButtonNormal__04eed.emojiButton__04eed.emojiButton__74017.button__74017,
+.scrollableContainer__74017:hover .emojiButtonNormal__04eed.emojiButton__04eed.emojiButton__74017.button__74017 {
     display: flex !important;
 }
 
