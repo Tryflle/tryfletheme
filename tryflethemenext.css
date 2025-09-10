@@ -598,7 +598,7 @@ nav.guilds_c48ade {
     border-bottom-color: var(--tt-accent-color) !important;
 }
 
-[aria-label="Open GIF picker"], [aria-label="Open sticker picker"], [aria-label="Select emoji"] {
+[aria-label="Open GIF picker"], [aria-label="Open sticker picker"] {
     display: none !important;
 }
 
