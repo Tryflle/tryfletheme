@@ -577,21 +577,16 @@ nav.guilds_c48ade {
     display: none !important;
 }
 
-/* .typing_b88801.base_b88801.inTextChannel_b88801, .typingDots_b88801 {
-    height: 0px !important;
-} */
- /* form_f75fb0 formWithLoadedChatInput_f75fb0 */
- /* Waiting on someone more skilled than me to fix this awful design change (new typing indicator spot). It leaves a giant blank space that bothers me SOOOOOOOOO much.*/
-
 .chatTypingGradientNotAtBottom__36d07.chatGradientBase__36d07, .chatTypingGradientAtBottom__36d07.chatGradientBase__36d07 {
     display: none !important;
 }
 
-.attachButton__0923f.attachButton__74017.button__24af7 {
+/* Fix for the bottom aligned chatbar experiment. */ 
+/* .attachButton__0923f.attachButton__74017.button__24af7 {
     height: 10px;
     width: 10px;
     margin-top: 7.5px;
-}
+} */
 
 .scrollableContainer__74017:hover,
 .scrollableContainer__74017:focus-within {
