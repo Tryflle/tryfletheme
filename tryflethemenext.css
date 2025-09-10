@@ -513,8 +513,8 @@ nav.guilds_c48ade {
     }
   }
 
-  button[aria-label="Open GIF picker"],
-  button[aria-label="Open sticker picker"] {
+  [aria-label="Open GIF picker"],
+  [aria-label="Open sticker picker"] {
     padding: 6px !important;
     width: 32px !important;
     height: 32px !important;
@@ -523,8 +523,8 @@ nav.guilds_c48ade {
     box-sizing: border-box !important;
   }
   
-  button[aria-label="Open GIF picker"] svg,
-  button[aria-label="Open sticker picker"] svg {
+  [aria-label="Open GIF picker"] svg,
+  [aria-label="Open sticker picker"] svg {
     width: 20px !important;
     height: 20px !important;
     transform: scale(1.2) !important;
@@ -551,7 +551,7 @@ nav.guilds_c48ade {
         );
     }
 
-    .slateTextArea_ec4baf {
+    .slateContainer_ec4baf {
         margin-left: 4px;
     }
 
@@ -577,12 +577,28 @@ nav.guilds_c48ade {
     display: none !important;
 }
 
+/* .typing_b88801.base_b88801.inTextChannel_b88801, .typingDots_b88801 {
+    height: 0px !important;
+} */
+ /* form_f75fb0 formWithLoadedChatInput_f75fb0 */
+ /* Waiting on someone more skilled than me to fix this awful design change (new typing indicator spot). It leaves a giant blank space that bothers me SOOOOOOOOO much.*/
+
+.chatTypingGradientNotAtBottom__36d07.chatGradientBase__36d07, .chatTypingGradientAtBottom__36d07.chatGradientBase__36d07 {
+    display: none !important;
+}
+
+.attachButton__0923f.attachButton__74017.button__24af7 {
+    height: 10px;
+    width: 10px;
+    margin-top: 7.5px;
+}
+
 .scrollableContainer__74017:hover,
 .scrollableContainer__74017:focus-within {
     border-bottom-color: var(--tt-accent-color) !important;
 }
 
-button[aria-label="Open GIF picker"], button[aria-label="Open sticker picker"], button[aria-label="Select emoji"] {
+[aria-label="Open GIF picker"], [aria-label="Open sticker picker"], [aria-label="Select emoji"] {
     display: none !important;
 }
 
@@ -590,16 +606,16 @@ button[aria-label="Open GIF picker"], button[aria-label="Open sticker picker"], 
     display: none;
 }
 
-.scrollableContainer__74017:focus-within .sprite__04eed.spriteGreyscale__04eed.active__04eed,
-.scrollableContainer__74017:hover .sprite__04eed.spriteGreyscale__04eed.active__04eed,
-.scrollableContainer__74017:focus-within .button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5,
-.scrollableContainer__74017:hover .button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5,
+.scrollableContainer__74017:focus-within [aria-label="Open sticker picker"],
+.scrollableContainer__74017:hover [aria-label="Open sticker picker"],
+.scrollableContainer__74017:focus-within [aria-label="Open GIF picker"],
+.scrollableContainer__74017:hover [aria-label="Open GIF picker"],
 .scrollableContainer__74017:focus-within .emojiButtonNormal__04eed.emojiButton__04eed.emojiButton__74017.button__74017,
 .scrollableContainer__74017:hover .emojiButtonNormal__04eed.emojiButton__04eed.emojiButton__74017.button__74017 {
     display: flex !important;
 }
 
-button[aria-label="Send a gift"], #app-mount > div.appAsidePanelWrapper_a3002d > div.notAppAsidePanel_a3002d > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > form > div > div > div > div > div.buttons__74017 > button {
+[aria-label="Send a gift"], #app-mount > div.appAsidePanelWrapper_a3002d > div.notAppAsidePanel_a3002d > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > form > div > div > div > div > div.buttons__74017 > button {
     display: none !important;
 }
 
