@@ -582,11 +582,11 @@ nav.guilds_c48ade {
 }
 
 /* Fix for the bottom aligned chatbar experiment. */ 
-/* .attachButton__0923f.attachButton__74017.button__24af7 {
+.attachButton__0923f.attachButton__74017.button__24af7 {
     height: 10px;
     width: 10px;
     margin-top: 7.5px;
-} */
+}
 
 .scrollableContainer__74017:hover,
 .scrollableContainer__74017:focus-within {
