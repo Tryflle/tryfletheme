@@ -420,11 +420,11 @@ nav[class*="guilds_"] {
 }
 
  /* -- Nameplate -- */
-.visual-refresh section.panels_c48ade {
+.visual-refresh section[class^="panels_"] {
     background-color: var(--tt-bg-dark);
   }
 
-.visual-refresh section.panels_c48ade {
+.visual-refresh section[class^="panels_"] {
     margin-left: var(--custom-guild-list-width);
     width: calc(100% - var(--space-xs)*2 - var(--custom-guild-list-width));
     .actionButtons_e131a9 button {
@@ -438,13 +438,13 @@ nav[class*="guilds_"] {
       scale: 0.8;
     }
   }
-  nav.guilds_c48ade {
+  nav[class*=guilds_] {
     margin-bottom: 0;
   }
   :root {
     --custom-rtc-account-height: 0;
   }
-  .sidebar_c48ade:after {
+  .sidebar__5e434:after {
     display: none;
 }
 nav.guilds_c48ade {
@@ -638,11 +638,9 @@ nav.guilds_c48ade {
 .placeholder__1b31f.slateTextArea_ec4baf {
   margin-left: 0 !important;
 }
-/* .channelBottomBarArea_f75fb0:not(.footer__5be3e)  .markup__75297.editor__1b31f.slateTextArea_ec4baf, .placeholder__1b31f.slateTextArea_ec4baf { */
-#app-mount > div.appAsidePanelWrapper_a3002d > div.notAppAsidePanel_a3002d > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > form > div > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf > div,
-#app-mount > div.appAsidePanelWrapper_a3002d > div.notAppAsidePanel_a3002d > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > form > div > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf > div > div.placeholder__1b31f.slateTextArea_ec4baf,
-#app-mount > div.appAsidePanelWrapper_a3002d > div.notAppAsidePanel_a3002d > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > form > div > div > div > div > div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf > div > div.markup__75297.editor__1b31f.slateTextArea_ec4baf,
-#app-mount > div.appAsidePanelWrapper_a3002d > div.notAppAsidePanel_a3002d > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content_c48ade > div.page_c48ade > div > div > div.content_f75fb0 > main > form > div > div > div > div > div.textArea__74017.textAreaSlate__74017.slateContainer_ec4baf > div > div.placeholder__1b31f.slateTextArea_ec4baf {
+
+/* High performance impact-- previously hardcoded, but I'm lazy and restoring the old version. */
+.channelBottomBarArea_f75fb0:not(.footer__5be3e)  .markup__75297.editor__1b31f.slateTextArea_ec4baf, .placeholder__1b31f.slateTextArea_ec4baf {
   margin-left: -10px !important;
 }
 
