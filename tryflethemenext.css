@@ -573,8 +573,8 @@ nav.guilds_c48ade {
     background-color: var(--tt-bg-light) !important;
 }
 /* Icons within the chatbox */
-[class*=channelAppLauncher_] {
-    display: none !important;
+div[class*="app-launcher-entrypoint"] {
+    display: none;
 }
 
 .chatTypingGradientNotAtBottom__36d07.chatGradientBase__36d07, .chatTypingGradientAtBottom__36d07.chatGradientBase__36d07 {
@@ -614,7 +614,7 @@ nav.guilds_c48ade {
     display: none;
 }
 
-.scrollableContainer__74017:focus-within [aria-label="Open sticker picker"],
+.scrollableContainer__74017:focus-within [aria-label="Open sticker picker"], /* Discord has removed the Gif, and Sticker picker. This can be reverted for now with the experiment: 2025-09-chat-input-ia-desktop: Not Eligble */
 .scrollableContainer__74017:hover [aria-label="Open sticker picker"],
 .scrollableContainer__74017:focus-within [aria-label="Open GIF picker"],
 .scrollableContainer__74017:hover [aria-label="Open GIF picker"],
