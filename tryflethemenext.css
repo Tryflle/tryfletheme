@@ -94,6 +94,15 @@
 
 /* -- General -- */
 
+/* Reverts DM colors via inheritance*/
+.interactive__972a0 {
+    --text-muted: #c7b1e4 !important;
+}
+.interactive__972a0:active, .interactiveSelected__972a0 {
+    color: hsl(314, 70%, 85%) !important; /* Cannot override variable without causing other issues, not worth it. */
+}
+
+
 /* Add Friends to DM */
 .messageGroupWrapper__45690 {
     background-color: var(--tt-bg-light) !important;
