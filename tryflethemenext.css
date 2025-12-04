@@ -51,6 +51,8 @@
     --status-positive: #c29df1 !important; /* Most green text */
     --green-360: #b593e0 !important;
     --message-reacted-text: #b593e0 !important; /* Reacted text color */ 
+    --text-strong: hsl(314, 70%, 85%) !important; /* New active text channel color */
+    --text-subtle: #ae97cd !important; /* New muted text */
     /* -- Theme variables -- */
     --tt-bg-light: #21202c; /* Lightest background color */
     --tt-bg-dark: #131020; /* Darkest background color */
@@ -657,6 +659,20 @@ div[class*="app-launcher-entrypoint"] {
 /* Background */
 .contentColumn__23e6b.contentColumnDefault__23e6b,.contentRegionScroller__23e6b.contentRegionShownSidebar__23e6b.auto_d125d2.scrollerBase_d125d2, .bar_c38106.systemBar_c38106.fixed_c38106.show_c38106 {
     background-color: var(--tt-bg-secondary);
+}
+
+/* Fix text color on vencord tabs -- can't find the variables because there's like 500 of them soooo */
+.vc-card-base.vc-card-normal.vc-plugins-info-card {
+    color: var(--tt-hover-color);
+    background-color: var(--tt-bg-dark);
+}
+
+.vc-card-base.vc-card-normal { 
+    background-color: var(--tt-bg-dark);
+}
+
+.contentColumn__23e6b.contentColumnDefault__23e6b {
+    color: var(--tt-hover-color);
 }
 
 /* Checkbox Setting Enabled */
