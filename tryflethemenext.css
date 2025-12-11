@@ -43,14 +43,14 @@
     --text-default: hsl(314, 70%, 85%) !important; /* Active DM */
     --background-mod-subtle: #1a1823 !important;
     --blurple-50: #b593e0 !important; /* Blurple */
-    --message-reacted-background: #c19df129 !important;
+    --message-reacted-background-default: #c19df129 !important;  /* Reacted background color */
     --mention-background: #9c77c8a7 !important; /* Mentions */
     --mention-foreground: #dcc1ff !important; /* Mentions */
     --text-brand: #b593e0 !important;
     --button-filled-brand-background-hover: #7b639b !important;
     --status-positive: #c29df1 !important; /* Most green text */
     --green-360: #b593e0 !important;
-    --message-reacted-text: #b593e0 !important; /* Reacted text color */ 
+    --message-reacted-text-default: #b593e0 !important; /* Reacted text color */ 
     --text-strong: hsl(314, 70%, 85%) !important; /* New active text channel color */
     --icon-strong: #c29df1 !important; /* New active icon channel color */
     --interactive-text-active: hsl(314, 70%, 85%) !important; /* New unread channel text color */
