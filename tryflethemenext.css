@@ -19,8 +19,8 @@
     --text-normal: #ece4ea !important; /* Text color */
     --header-primary: white !important; /* Default name color and some other random elements. */
     --background-base-lowest: #1a1823 !important; /* Background color */
-    --background-mentioned: #252836 !important; /* Mentioned color */
-    --background-mentioned-hover: #2f3344 !important; /* Mentioned hover color */
+    --message-mentioned-background-default: #252836 !important; /* Mentioned color */
+    --message-mentioned-background-hover: #2f3344 !important; /* Mentioned hover color */;
     --bg-overlay-selected: #3f3b50; /* Channel selected */
     --icon-secondary: #ae97cd !important; /* Nameplate icons (disabled) */
     --interactive-normal: #ae97cd !important; /* Icons */
@@ -34,7 +34,7 @@
     --interactive-active: hsl(314, 70%, 85%) !important; /* Active text color */
     --text-primary: hsl(314, 70%, 85%) !important; /* Channel text enabled color */
     --icon-primary: #c29df1 !important; /* Channel icon enabled color */
-    --background-message-hover: #1F1F28 !important; /* Background color */
+    --message-background-hover: #1F1F28 !important; /* Background color */
     --text-secondary: #c7b1e4 !important; /* Secondary text color */
     --icon-tertiary: #ae97cd !important; /* Tertiary icon color */
     --background-surface-higher: #1a1823 !important; /* Discord icon color top left when not in dms */
@@ -52,7 +52,14 @@
     --green-360: #b593e0 !important;
     --message-reacted-text: #b593e0 !important; /* Reacted text color */ 
     --text-strong: hsl(314, 70%, 85%) !important; /* New active text channel color */
+    --icon-strong: #c29df1 !important; /* New active icon channel color */
+    --interactive-text-active: hsl(314, 70%, 85%) !important; /* New unread channel text color */
+    --interactive-text-hover: #c29df1 !important; /* New hover text */
+    --icon-subtle: #ae97cd !important; /* New unread message text channel icon color */
     --text-subtle: #ae97cd !important; /* New muted text */
+    --icon-muted:  #ae97cd !important; /* New interactive normal */
+    --interactive-text-default: #ae97cd !important; /* New interactive normal... again... */
+    --interactive-icon-default: #ae97cd !important; /* New interactive normal...... AGAAAIN.. */
     /* -- Theme variables -- */
     --tt-bg-light: #21202c; /* Lightest background color */
     --tt-bg-dark: #131020; /* Darkest background color */
@@ -93,6 +100,11 @@
 */
 
 /* -- General -- */
+
+/* Brings back proper hover colors, thanks Discord! */
+.clickable__9293f:hover .icon__9293f{
+    color: #c29df1 !important;
+}
 
 /* Reverts DM colors via inheritance*/
 .interactive__972a0 {
