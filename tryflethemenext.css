@@ -111,8 +111,8 @@
     color: #c29df1 !important;
 }
 
-/* selected text channel color */
-.modeSelected__2ea32 {
+/* selected text channel color and unread */
+.modeSelected__2ea32, .highlighted__20a53 {
     --text-strong: hsl(314, 70%, 85%) !important;
 }
 
