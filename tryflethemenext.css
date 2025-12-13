@@ -51,7 +51,7 @@
     --status-positive: #c29df1 !important; /* Most green text */
     --green-360: #b593e0 !important;
     --message-reacted-text-default: #b593e0 !important; /* Reacted text color */ 
-    --text-strong: hsl(314, 70%, 85%) !important; /* New active text channel color */
+    /* --text-strong: hsl(314, 70%, 85%) !important;  New active text channel color--- not anymore. MAKE UP YOUR MIND DISCORD */
     --icon-strong: #c29df1 !important; /* New active icon channel color */
     --interactive-text-active: hsl(314, 70%, 85%) !important; /* New unread channel text color */
     --interactive-text-hover: #c29df1 !important; /* New hover text */
@@ -104,6 +104,11 @@
 /* Brings back proper hover colors, thanks Discord! */
 .clickable__9293f:hover .icon__9293f{
     color: #c29df1 !important;
+}
+
+/* selected text channel color */
+.modeSelected__2ea32 {
+    --text-strong: hsl(314, 70%, 85%) !important;
 }
 
 /* Reverts DM colors via inheritance*/
