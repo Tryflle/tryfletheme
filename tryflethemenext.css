@@ -175,6 +175,10 @@
 .searchBar__97492 {
     background-color: var(--tt-bg-dark) !important;
 }
+.searchBar__97492 * {
+    color: #d1bee9;
+}
+
 .wrapper_fc8177.cozy_fc8177, .scrollerContent__36d07.content_d125d2, .chatContent_f75fb0 {
     background-color: var(--tt-bg-light) !important;
 }
