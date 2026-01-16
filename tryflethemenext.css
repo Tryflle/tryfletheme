@@ -60,6 +60,9 @@
     --icon-muted:  #ae97cd !important; /* New interactive normal */
     --interactive-text-default: #ae97cd !important; /* New interactive normal... again... */
     --interactive-icon-default: #ae97cd !important; /* New interactive normal...... AGAAAIN.. */
+    --icon-voice-muted: #d696d7 !important; /* Take a wild guess. */
+    --background-feedback-notification: #d696d7 !important; /* Notification background color */
+
     /* -- Theme variables -- */
     --tt-bg-light: #21202c; /* Lightest background color */
     --tt-bg-dark: #131020; /* Darkest background color */
@@ -89,14 +92,7 @@
 }
 
 /* --- TODO ---
-1. Fix inconsistencies with old version:
-   A. Interactive active is now icon-primary, which is shared in too many places. This includes the channel icon AND all enabled icons, which were previously pink.
-2. Look into problem with smaller chatbar size after typing a message with multiple lines.
-3. Voice chat
-4. ReviewDB and other vencord related things
-5. `` markdown.
-6. Muted channels?
-7. Whatever else you find.
+1. fix folder icons on servers
 */
 
 /* -- General -- */
@@ -114,6 +110,11 @@
 /* selected text channel color and unread */
 ._2ea32c412048f708-modeSelected, ._20a53846fe2e8513-highlighted {
     --text-strong: hsl(314, 70%, 85%) !important;
+}
+
+/* muted channel color */
+._2ea32c412048f708-modeMuted {
+    --text-muted: rgb(140, 120, 150);
 }
 
 /* Reverts DM colors via inheritance*/
