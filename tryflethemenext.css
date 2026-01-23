@@ -98,63 +98,63 @@
 /* -- General -- */
 
 /* Hides the weird blur thing on the seperator of the top bar */
-._9293f6b2fc12398a-children:after {
+.children__9293f:after {
     background: transparent !important;
 }
 
 /* Brings back proper hover colors, thanks Discord! */
-._9293f6b2fc12398a-clickable:hover ._9293f6b2fc12398a-icon{
+.clickable__9293f:hover .icon__9293f{
     color: #c29df1 !important;
 }
 
 /* selected text channel color and unread */
-._2ea32c412048f708-modeSelected, ._20a53846fe2e8513-highlighted {
+.modeSelected__2ea32, .highlighted__20a53 {
     --text-strong: hsl(314, 70%, 85%) !important;
 }
 
 /* muted channel color */
-._2ea32c412048f708-modeMuted {
+.modeMuted__2ea32 {
     --text-muted: rgb(140, 120, 150);
 }
 
 /* Reverts DM colors via inheritance*/
-._972a0d22c8afa7f0-interactive {
+.interactive__972a0 {
     --text-muted: #c7b1e4 !important;
 }
-._972a0d22c8afa7f0-interactive:active, ._972a0d22c8afa7f0-interactiveSelected {
+.interactive__972a0:active, .interactiveSelected__972a0 {
     color: hsl(314, 70%, 85%) !important; /* Cannot override variable without causing other issues, not worth it. */
 }
 
 /* Add Friends to DM */
-.e8b59c4b335dd2fc-messageGroupWrapper {
+.messageGroupWrapper_e8b59c {
     background-color: var(--tt-bg-light) !important;
 }
 
 /* Pins */
-.e8b59c4b335dd2fc-messagesPopout.d125d22cdfd32cfe-thin.d125d22cdfd32cfe-scrollerBase,.e8b59c4b335dd2fc-header,.e8b59c4b335dd2fc-footer {
+.messagesPopout_e8b59c.thin_d125d2.scrollerBase_d125d2,.header_e8b59c,.footer_e8b59c {
     background-color: var(--tt-bg-secondary) !important;
 }
 
 /* Pinned DMS - Vencord */
-._99e7cad8d4c55236-headerText {
+.headerText__99e7c {
     color: var(--tt-accent-color);
 }
 
 /* Emoji Information */
-.d5cd2da5733d0b6e-guildSection {
+.guildSection_d5cd2d {
     background-color: var(--tt-bg-light) !important;
 }
-.d5cd2da5733d0b6e-emojiSection {
+.emojiSection_d5cd2d {
     background-color: var(--tt-bg-secondary) !important;
 }
 
 /* Automod messages */
-._5126c0cd07f243a0-message._5126c0cd07f243a0-cozyMessage._5126c0cd07f243a0-ephemeral._5126c0cd07f243a0-groupStart._5126c0cd07f243a0-automodMessage.c19a557985eb7793-wrapper.c19a557985eb7793-cozy.c19a557985eb7793-zalgo {
+.message__5126c.cozyMessage__5126c.ephemeral__5126c.groupStart__5126c.automodMessage__5126c.wrapper_c19a55.cozy_c19a55.zalgo_c19a55 {
     background-color: #703d7737;
 }
 
 /* Modal hover color */
-:where(.visual-refresh) .c1e9c47c23f12ca3-colorDefault.c1e9c47c23f12ca3-focused {
+:where(.visual-refresh) .colorDefault_c1e9c4.focused_c1e9c4 {
     --bg-mod-subtle: var(--tt-accent-color) !important;
 }
 
@@ -164,61 +164,61 @@
 }
 
 /* Background */
-._36d072eab2b2e737-messagesWrapper,.d852db00c0588eb9-wrapper {
+.messagesWrapper__36d07,.wrapper_d852db {
     background-color: var(--tt-bg-light) !important;
 }
-._99e7cad8d4c55236-scroller._99f8cc7ad4790ce9-thin._99f8cc7ad4790ce9-scrollerBase._99f8cc7ad4790ce9-fade {
+.scroller__99e7c.thin__99f8c.scrollerBase__99f8c.fade__99f8c {
     background-color: var(--tt-bg-secondary) !important;
 }
-._5e434347c823b592-sidebarList._5e434347c823b592-sidebarListRounded {
+.sidebarList__5e434.sidebarListRounded__5e434 {
     background-color: var(--tt-bg-light) !important;
 }
-._974928fe84ca9647-searchBar {
+.searchBar__97492 {
     background-color: var(--tt-bg-dark) !important;
 }
-._974928fe84ca9647-searchBar * {
+.searchBar__97492 * {
     color: #d1bee9;
 }
 
-.fc817765600a960a-wrapper.fc817765600a960a-cozy, ._36d072eab2b2e737-scrollerContent.d125d22cdfd32cfe-content, .f75fb00fb7356cbe-chatContent {
+.wrapper_fc8177.cozy_fc8177, .scrollerContent__36d07.content_d125d2, .chatContent_f75fb0 {
     background-color: var(--tt-bg-light) !important;
 }
 
-.aa605f19898fe32e-actionBar,.f7ecaca5c80dbf3a-wrapper,._0ccaee68b77c7469-file {
+.actionBar_aa605f,.wrapper_f7ecac,.file__0ccae {
     background-color: var(--tt-bg-secondary) !important;
 }
 
-.ef3116c2da186559-itemsContainer, .c38106a3f0c3ca76-title {
+.itemsContainer_ef3116, .title_c38106 {
     background-color: var(--tt-bg-dark) !important;
 }
-.c8ffbb79449f399c-members, ._91a9d7f7e5248a56-childContainer, ._5d473ecff348c314-member {
+.members_c8ffbb, .childContainer__91a9d, .member__5d473 {
     background-color: var(--tt-bg-secondary);
 }
-.f75fb00fb7356cbe-title._9293f6b2fc12398a-container._9293f6b2fc12398a-themed {
+.title_f75fb0.container__9293f.themed__9293f {
     background-color: var(--tt-bg-secondary) !important;
 }
 /* Add extra spacing between the text bar and messages */
-._36d072eab2b2e737-scrollerContent.d125d22cdfd32cfe-content {
+.scrollerContent__36d07.content_d125d2 {
     margin-bottom: 7px !important;
 }
 /* Embeds */
-.embedWrapper_b7e1cb._623de82e76ad7f82-embedFull._623de82e76ad7f82-embed._752971923a1e6683-markup {
+.embedWrapper_b7e1cb.embedFull__623de.embed__623de.markup__75297 {
     background-color: var(--tt-bg-secondary) !important;
     border-radius: 5px !important;
 }
 /* Friends */
-._7e549558f336cddb-itemCard._00943886e1cf89d1-wrapper.bf1984a18b3ec6f0-outer.bf1984a18b3ec6f0-padded.bf1984a18b3ec6f0-interactive {
+.itemCard__7e549.wrapper__00943.outer_bf1984.padded_bf1984.interactive_bf1984 {
     background-color: var(--tt-bg-dark) !important;
 }
-.theme-dark.theme-darker.images-dark._9293f6b2fc12398a-container._9293f6b2fc12398a-themed,._7d20cf18f8a2784c-scroller.d125d22cdfd32cfe-thin.d125d22cdfd32cfe-scrollerBase {
+.theme-dark.theme-darker.images-dark.container__9293f.themed__9293f,.scroller__7d20c.thin_d125d2.scrollerBase_d125d2 {
     background-color: var(--tt-bg-secondary) !important;
 }
-._133bf5eea8e33a34-peopleColumn {
+.peopleColumn__133bf {
     background-color: var(--tt-bg-light) !important;
 }
 
 /* Context Menu */
-.c1e9c47c23f12ca3-scroller.d125d22cdfd32cfe-thin.d125d22cdfd32cfe-scrollerBase {
+.scroller_c1e9c4.thin_d125d2.scrollerBase_d125d2 {
     background-color: var(--tt-bg-secondary);
 }
 
@@ -229,21 +229,21 @@
 
 /* -- Pickers -- */
 /* Emoji */
-._084343c4f11eaaab-contentWrapper,.c0e32c5cffed3d9f-header,.affa7e120767dd82-scroller.c656aca9a3db31a9-list.d125d22cdfd32cfe-thin.d125d22cdfd32cfe-scrollerBase,._14245bb948377a25-wrapper.c656aca9a3db31a9-header, ._29ebda89742214e9-wrapper {
+.contentWrapper__08434,.header_c0e32c,.scroller_affa7e.list_c656ac.thin_d125d2.scrollerBase_d125d2,.wrapper__14245.header_c656ac, .wrapper__29ebd {
     background-color: var(--tt-bg-light) !important;
 }
-.searchBar_c0e32c.container_a45028.medium_a45028, .affa7e120767dd82-scroller.d125d22cdfd32cfe-none.d125d22cdfd32cfe-scrollerBase,.aeaaeb2a573807f0-inspector.c0e32c5cffed3d9f-inspector,.b9ee0c229bc0b6bb-unicodeShortcut {
+.searchBar_c0e32c.container_a45028.medium_a45028, .scroller_affa7e.none_d125d2.scrollerBase_d125d2,.inspector_aeaaeb.inspector_c0e32c,.unicodeShortcut_b9ee0c {
     background-color: var(--tt-bg-secondary) !important;
 }
 /* Sticker */
-._8ef02eea17068b73-header,._14245bb948377a25-wrapper.e94b8cb2ff7b5c8d-packHeader {
+.header__8ef02,.wrapper__14245.packHeader_e94b8c {
     background-color: var(--tt-bg-light) !important;
 }
-.aeaaeb2a573807f0-inspector,._3ad28b0867fa3fad-standardStickerShortcut,.container_a45028.medium_a45028 {
+.inspector_aeaaeb,.standardStickerShortcut__3ad28,.container_a45028.medium_a45028 {
     background-color: var(--tt-bg-secondary) !important;
 }
 /* Gifs */
-._084343c4f11eaaab-nav,.fed6d32841cc2da2-header,.d02962a38047ac3c-container._99f8cc7ad4790ce9-thin._99f8cc7ad4790ce9-scrollerBase._99f8cc7ad4790ce9-fade,._2dc39186a9b98da4-results._99f8cc7ad4790ce9-thin._99f8cc7ad4790ce9-scrollerBase._99f8cc7ad4790ce9-fade,[class^="noResults_"] {
+.nav__08434,.header_fed6d3,.container_d02962.thin__99f8c.scrollerBase__99f8c.fade__99f8c,.results__2dc39.thin__99f8c.scrollerBase__99f8c.fade__99f8c,[class^="noResults_"] {
     background-color: var(--tt-bg-light) !important;
 }
 /* This removes the blur! --V */
@@ -428,7 +428,7 @@ nav[class*="guilds"] {
     font-weight: 520 !important;
 }
 /* Server size within folders */
-.f34534e8a5d3ca64-icon._48112cbe77dc5022-folderPreviewGuildIcon.f34534e8a5d3ca64-iconSizeMini.f34534e8a5d3ca64-iconInactive {
+.icon_f34534.folderPreviewGuildIcon__48112.iconSizeMini_f34534.iconInactive_f34534 {
    height: 90% !important;
    width: 90% !important;
 }
@@ -446,7 +446,7 @@ nav[class*="guilds"] {
    background: var(--tt-bg-dark) !important;
    height: 120px !important;
 }
-.a562c840daab72a7-barFill {
+.barFill_a562c8 {
    background: var(--tt-accent-color) !important;
 }
 .vc-spotify-artist, .vc-spotify-album {
@@ -457,21 +457,21 @@ nav[class*="guilds"] {
 }
 
  /* -- Nameplate -- */
-.visual-refresh ._5e434347c823b592-panels {
+.visual-refresh .panels__5e434 {
     background-color: var(--tt-bg-dark);
   }
 
-.visual-refresh ._5e434347c823b592-panels {
+.visual-refresh .panels__5e434 {
     margin-left: var(--custom-guild-list-width);
     width: calc(100% - var(--space-xs)*2 - var(--custom-guild-list-width));
-    .e131a99484292a19-actionButtons button {
+    .actionButtons_e131a9 button {
       padding: 0;
     }
-    >div:not(.e131a99484292a19-wrapper) {
+    >div:not(.wrapper_e131a9) {
       height: 50px;
       padding: 4px;
     }
-    ._37e49614b9f110a9-avatar {
+    .avatar__37e49 {
       scale: 0.8;
     }
   }
@@ -481,14 +481,14 @@ nav[class*="guilds"] {
   :root {
     --custom-rtc-account-height: 0;
   }
-  ._5e434347c823b592-sidebar:after {
+  .sidebar__5e434:after {
     display: none;
 }
-nav._5e434347c823b592-guilds {
+nav.guilds__5e434 {
   margin-bottom: 0 !important;
 }
 /* Current Game */
-._5dec784a68542d60-panel._5e434347c823b592-activityPanel {
+.panel__5dec7.activityPanel__5e434 {
     background-color: var(--tt-bg-dark) !important;
 }
 /* Make the background of microphone & headphone icons invisible. */
@@ -500,38 +500,38 @@ nav._5e434347c823b592-guilds {
 }
 
 /* Hide extra buttons *annoying* */
-._67645e1530f1195d-button._37e49614b9f110a9-buttonChevron._67645e1530f1195d-enabled._67645e1530f1195d-plated._201d5e8a3c09670a-button._201d5e8a3c09670a-lookBlank._201d5e8a3c09670a-colorBrand._201d5e8a3c09670a-grow._67645e1530f1195d-button._37e49614b9f110a9-buttonChevron {
+.button__67645.buttonChevron__37e49.enabled__67645.plated__67645.button__201d5.lookBlank__201d5.colorBrand__201d5.grow__201d5.button__67645.buttonChevron__37e49 {
     display: none;
 }
 
 /* -- Chatbox container -- */
 /* Commands */
-.affa7e120767dd82-scroller.d1405bf11dcfb07a-list.d125d22cdfd32cfe-thin.d125d22cdfd32cfe-scrollerBase,._14245bb948377a25-wrapper.d1405bf11dcfb07a-categoryHeader,._1464f16f3e3c14a9-optionPillValue,._6b0e07cbaf13ec4e-scroller.d125d22cdfd32cfe-thin.d125d22cdfd32cfe-scrollerBase {
+.scroller_affa7e.list_d1405b.thin_d125d2.scrollerBase_d125d2,.wrapper__14245.categoryHeader_d1405b,.optionPillValue__1464f,.scroller__6b0e0.thin_d125d2.scrollerBase_d125d2 {
     background-color: var(--tt-bg-light) !important;
     border-radius:10px;
 }
-._1464f16f3e3c14a9-inlineElement._1464f16f3e3c14a9-optionPill {
+.inlineElement__1464f.optionPill__1464f {
     border-radius:10px;
     border: 0px;
     background-color:var(--tt-bg-secondary);
 }
-._1464f16f3e3c14a9-optionPillKey {
+.optionPillKey__1464f {
     background-color: var(--tt-bg-dark) !important;
     border-radius:10px;
 }
 /* Typing size and color */
-.b8880176888cc928-base {
+.base_b88801 {
    font-size: 14px !important;
    color: white !important;
 }
 
 /* Chatbox container background color */
-.f75fb00fb7356cbe-form.f75fb00fb7356cbe-formWithLoadedChatInput {
+.form_f75fb0.formWithLoadedChatInput_f75fb0 {
     background-color: var(--tt-bg-light) !important;
 }
 
 /* Chatbox Tokyo Night style effect + Color */
-._740174f3d6a2c8fe-scrollableContainer._740174f3d6a2c8fe-themedBackground {
+.scrollableContainer__74017.themedBackground__74017 {
     border-radius: 5px;
     border-bottom: 2px var(--tt-bg-secondary) solid !important;
     transition: border-color .15s ease;
@@ -539,15 +539,15 @@ nav._5e434347c823b592-guilds {
 }
 
 /* Chatbox revert emoji size */
-._04eede68d145ae81-spriteContainer {
+.spriteContainer__04eed {
     --custom-emoji-sprite-size: 24px !important;
 }
-._0923f156a0410684-attachButton._0923f156a0410684-attachButton {
+.attachButton__0923f.attachButton__0923f {
     padding: 10px 16px;
     position: sticky;
     top: 0;
   }
-  ._0923f156a0410684-attachButtonInner {
+  .attachButtonInner__0923f {
     height: 24px;
     > svg {
       width: 24px;
@@ -572,18 +572,18 @@ nav._5e434347c823b592-guilds {
     transform: scale(1.2) !important;
   }
   /* Follow this channel... */
-  ._44df51b030bd5ece-wrapper {
+  .wrapper__44df5 {
     background-color: var(--tt-bg-secondary) !important;
     border-radius: 5px !important;
     padding: 10px !important;
   }
   /* Chat box size tweak */
-  .f75fb00fb7356cbe-channelTextArea {
+  .channelTextArea_f75fb0 {
     margin-left: 6px;
     margin-right: 6px;
     margin-bottom: 20px;
 
-    ._740174f3d6a2c8fe-inner {
+    .inner__74017 {
         margin-top: -6px;
         margin-bottom: -6px;
         margin-right: 10px;
@@ -593,25 +593,25 @@ nav._5e434347c823b592-guilds {
         );
     }
 
-    .ec4baf0360ff3578-slateContainer {
+    .slateContainer_ec4baf {
         margin-left: 4px;
     }
 
-    ._740174f3d6a2c8fe-scrollableContainer {
+    .scrollableContainer__74017 {
         overflow: hidden;
     }
 
-  .f75fb00fb7356cbe-channelTextArea._740174f3d6a2c8fe-channelTextArea {
+  .channelTextArea_f75fb0.channelTextArea__74017 {
     border: 0px;
   }
 }
 
   
-.b77158512e0ab116-channelAttachmentArea._506b39a96c2f8884-scrollbarGhost._506b39a96c2f8884-scrollbar {
+.channelAttachmentArea_b77158.scrollbarGhost__506b3.scrollbar__506b3 {
     background-color: var(--tt-bg-secondary) !important;
 }
 
-.aa605f19898fe32e-upload {
+.upload_aa605f {
     background-color: var(--tt-bg-light) !important;
 }
 /* Icons within the chatbox */
@@ -619,32 +619,32 @@ div[class*="app-launcher-entrypoint"] {
     display: none;
 }
 
-._36d072eab2b2e737-chatTypingGradientNotAtBottom._36d072eab2b2e737-chatGradientBase, ._36d072eab2b2e737-chatTypingGradientAtBottom._36d072eab2b2e737-chatGradientBase {
+.chatTypingGradientNotAtBottom__36d07.chatGradientBase__36d07, .chatTypingGradientAtBottom__36d07.chatGradientBase__36d07 {
     display: none !important;
 }
 
 /* Fix for the bottom aligned chatbar experiment. */ 
-._0923f156a0410684-attachButton._740174f3d6a2c8fe-attachButton._24af7f4d0326ba4f-button {
+.attachButton__0923f.attachButton__74017.button__24af7 {
     height: 10px;
     width: 10px;
     margin-top: 7.5px;
 }
-._36d072eab2b2e737-scrollerSpacer {
+.scrollerSpacer__36d07 {
     height: 25px !important;
 }
-.b8880176888cc928-text {
+.text_b88801 {
     font-size: 10px !important;
     margin-left: 5px !important;
 }
-.b8880176888cc928-typingDots {
+.typingDots_b88801 {
     margin-top: 140px !important;
     transform: scale(0.7) !important;
     margin-left: -16% !important;
     align-self: flex-end; /* Remove this line to use experimentatal bottom aligned typing indicator. */
 }
 
-._740174f3d6a2c8fe-scrollableContainer:hover,
-._740174f3d6a2c8fe-scrollableContainer:focus-within {
+.scrollableContainer__74017:hover,
+.scrollableContainer__74017:focus-within {
     border-bottom-color: var(--tt-accent-color) !important;
 }
 
@@ -652,20 +652,20 @@ div[class*="app-launcher-entrypoint"] {
     display: none !important;
 }
 
-._04eede68d145ae81-emojiButtonNormal._04eede68d145ae81-emojiButton._740174f3d6a2c8fe-emojiButton._740174f3d6a2c8fe-button {
+.emojiButtonNormal__04eed.emojiButton__04eed.emojiButton__74017.button__74017 {
     display: none;
 }
 
-._740174f3d6a2c8fe-scrollableContainer:focus-within [aria-label="Open sticker picker"], /* Discord has removed the Gif, and Sticker picker. This can be reverted for now with the experiment: 2025-09-chat-input-ia-desktop: Not Eligble */
-._740174f3d6a2c8fe-scrollableContainer:hover [aria-label="Open sticker picker"],
-._740174f3d6a2c8fe-scrollableContainer:focus-within [aria-label="Open GIF picker"],
-._740174f3d6a2c8fe-scrollableContainer:hover [aria-label="Open GIF picker"],
-._740174f3d6a2c8fe-scrollableContainer:focus-within ._04eede68d145ae81-emojiButtonNormal._04eede68d145ae81-emojiButton._740174f3d6a2c8fe-emojiButton._740174f3d6a2c8fe-button,
-._740174f3d6a2c8fe-scrollableContainer:hover ._04eede68d145ae81-emojiButtonNormal._04eede68d145ae81-emojiButton._740174f3d6a2c8fe-emojiButton._740174f3d6a2c8fe-button {
+.scrollableContainer__74017:focus-within [aria-label="Open sticker picker"], /* Discord has removed the Gif, and Sticker picker. This can be reverted for now with the experiment: 2025-09-chat-input-ia-desktop: Not Eligble */
+.scrollableContainer__74017:hover [aria-label="Open sticker picker"],
+.scrollableContainer__74017:focus-within [aria-label="Open GIF picker"],
+.scrollableContainer__74017:hover [aria-label="Open GIF picker"],
+.scrollableContainer__74017:focus-within .emojiButtonNormal__04eed.emojiButton__04eed.emojiButton__74017.button__74017,
+.scrollableContainer__74017:hover .emojiButtonNormal__04eed.emojiButton__04eed.emojiButton__74017.button__74017 {
     display: flex !important;
 }
 
-[aria-label="Give a Gift"], [aria-label="Upgrade your friends! Gift them awesome chat perks with Nitro."], #app-mount > div.a3002d7de5be5280-appAsidePanelWrapper > div > div.a3002d7de5be5280-app > div > div._960e4207cea8323e-layers._160d8e55254637e5-layers > div > div > div > div._5e434347c823b592-content > div._5e434347c823b592-page > div > div > div.f75fb00fb7356cbe-content > main > form > div > div > div > div._740174f3d6a2c8fe-scrollableContainer._740174f3d6a2c8fe-themedBackground > div > div._740174f3d6a2c8fe-buttons._740174f3d6a2c8fe-reducedGap > div._740174f3d6a2c8fe-button._24af7f4d0326ba4f-button, #app-mount > div.a3002d7de5be5280-appAsidePanelWrapper > div.a3002d7de5be5280-notAppAsidePanel > div.a3002d7de5be5280-app > div > div._960e4207cea8323e-layers._160d8e55254637e5-layers > div > div > div > div._5e434347c823b592-content > div._5e434347c823b592-page > div > div > div.f75fb00fb7356cbe-content > main > form > div > div > div > div > div._740174f3d6a2c8fe-buttons > button {
+[aria-label="Give a Gift"], [aria-label="Upgrade your friends! Gift them awesome chat perks with Nitro."], #app-mount > div.appAsidePanelWrapper_a3002d > div > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content__5e434 > div.page__5e434 > div > div > div.content_f75fb0 > main > form > div > div > div > div.scrollableContainer__74017.themedBackground__74017 > div > div.buttons__74017.reducedGap__74017 > div.button__74017.button__24af7, #app-mount > div.appAsidePanelWrapper_a3002d > div.notAppAsidePanel_a3002d > div.app_a3002d > div > div.layers__960e4.layers__160d8 > div > div > div > div.content__5e434 > div.page__5e434 > div > div > div.content_f75fb0 > main > form > div > div > div > div > div.buttons__74017 > button {
     display: none !important;
 }
 
@@ -675,14 +675,14 @@ div[class*="app-launcher-entrypoint"] {
 }
 
 /* Shift text 10px left because it looks weird due to a new change without it */
-._5be3ef42f92174b2-footer ._752971923a1e6683-markup._1b31f471f0bb10ab-editor.ec4baf0360ff3578-slateTextArea,
-._740174f3d6a2c8fe-inner ._752971923a1e6683-markup._1b31f471f0bb10ab-editor.ec4baf0360ff3578-slateTextArea,
-._1b31f471f0bb10ab-placeholder.ec4baf0360ff3578-slateTextArea {
+.footer__5be3e .markup__75297.editor__1b31f.slateTextArea_ec4baf,
+.inner__74017 .markup__75297.editor__1b31f.slateTextArea_ec4baf,
+.placeholder__1b31f.slateTextArea_ec4baf {
   margin-left: 0 !important;
 }
 
 /* High performance impact-- previously hardcoded, but I'm lazy and restoring the old version. */
-.f75fb00fb7356cbe-channelBottomBarArea:not(._5be3ef42f92174b2-footer)  ._752971923a1e6683-markup._1b31f471f0bb10ab-editor.ec4baf0360ff3578-slateTextArea, ._1b31f471f0bb10ab-placeholder.ec4baf0360ff3578-slateTextArea {
+.channelBottomBarArea_f75fb0:not(.footer__5be3e)  .markup__75297.editor__1b31f.slateTextArea_ec4baf, .placeholder__1b31f.slateTextArea_ec4baf {
   margin-left: -10px !important;
 }
 
@@ -697,7 +697,7 @@ div[class*="app-launcher-entrypoint"] {
 /* -- Settings -- */
 
 /* Background */
-._23e6b439306f125a-contentColumn._23e6b439306f125a-contentColumnDefault,._23e6b439306f125a-contentRegionScroller._23e6b439306f125a-contentRegionShownSidebar.d125d22cdfd32cfe-auto.d125d22cdfd32cfe-scrollerBase, .c38106a3f0c3ca76-bar.c38106a3f0c3ca76-systemBar.c38106a3f0c3ca76-fixed.c38106a3f0c3ca76-show {
+.contentColumn__23e6b.contentColumnDefault__23e6b,.contentRegionScroller__23e6b.contentRegionShownSidebar__23e6b.auto_d125d2.scrollerBase_d125d2, .bar_c38106.systemBar_c38106.fixed_c38106.show_c38106 {
     background-color: var(--tt-bg-secondary);
 }
 
@@ -711,12 +711,12 @@ div[class*="app-launcher-entrypoint"] {
     background-color: var(--tt-bg-dark);
 }
 
-._23e6b439306f125a-contentColumn._23e6b439306f125a-contentColumnDefault {
+.contentColumn__23e6b.contentColumnDefault__23e6b {
     color: var(--tt-hover-color);
 }
 
 /* Checkbox Setting Enabled */
-._3f21e80f8677ec40-container._3f21e80f8677ec40-checked {
+.container__3f21e.checked__3f21e {
     background-color: #b593e0 !important;
 }
 
@@ -724,6 +724,6 @@ div[class*="app-launcher-entrypoint"] {
     fill: #b593e0 !important;
 }
 /* Vencord stuff */
-.vc-addon-card,.vc-settings-quickActions-card._730694f5672c9601-cardPrimary._730694f5672c9601-card, .vc-plugins-info-card._730694f5672c9601-cardPrimary._730694f5672c9601-card {
+.vc-addon-card,.vc-settings-quickActions-card.cardPrimary__73069.card__73069, .vc-plugins-info-card.cardPrimary__73069.card__73069 {
     background-color: var(--tt-bg-dark) !important;
 }
