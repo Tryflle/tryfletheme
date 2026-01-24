@@ -9,7 +9,7 @@
 /* This is the rewrite of my original theme, with a much cleaner codebase.*/
 /* I used many css snippets from the Vencord Discord server which accomplished many of the same goals that I had in order to save time. All respective authors are credited with their discord tag. Some are editted, sometimes majorly. */
 
-.visual-refresh, .visual-refresh .theme-darker {
+.visual-refresh, .visual-refresh .theme-darker, .theme-dark  {
     /* -- Discord variables -- */
     --brand-460: var(--accent-secondary); /* Voice Messages play icon */
     --brand-500: #b593e0; /* Voice chat playing */
@@ -19,8 +19,6 @@
     --text-normal: #ece4ea !important; /* Text color */
     --header-primary: white !important; /* Default name color and some other random elements. */
     --background-base-lowest: #1a1823 !important; /* Background color */
-    --message-mentioned-background-default: #252836 !important; /* Mentioned color */
-    --message-mentioned-background-hover: #2f3344 !important; /* Mentioned hover color */;
     --bg-overlay-selected: #3f3b50; /* Channel selected */
     --icon-secondary: #ae97cd !important; /* Nameplate icons (disabled) */
     --interactive-normal: #ae97cd !important; /* Icons */
@@ -70,7 +68,7 @@
     --tt-hover-color: #f3bce6; /* Hover color */
     --tt-accent-color: #c29df1; /* Accent color */
 }
-.visual-refresh .theme-darker, body {
+.visual-refresh .theme-darker, .theme-dark, body {
     /* -- Discord Variables (applied a bit differently) */
     --text-default: #ece4ea !important; /* Chat text color */
     --text-danger: #c29df1 !important;
@@ -85,6 +83,11 @@
     --background-surface-high: #1a1823 !important; /* Profiles */
     --button-positive-background: #c29df1;
     --button-positive-background-hover: #dac1fb;
+}
+.mentioned__5126c { /* mention stuff */
+    --message-mentioned-background-default: #252836 !important; /* Mentioned color */
+    --message-mentioned-background-hover: #2f3344 !important; /* Mentioned hover color */
+    --icon-feedback-warning: #b593e0 !important; /* Bar next to mention */
 }
 
 #vc-spotify-player {
