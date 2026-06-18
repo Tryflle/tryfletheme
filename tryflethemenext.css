@@ -459,6 +459,10 @@ nav[class*="guilds"] {
     background-color: #76128637;
 }
 
+#vc-spotify-player::after {
+    display: none;
+}
+
  /* -- Nameplate -- */
 .visual-refresh .panels__5e434 {
     background-color: var(--tt-bg-dark);
@@ -490,6 +494,22 @@ nav[class*="guilds"] {
 nav.guilds__5e434 {
   margin-bottom: 0 !important;
 }
+
+.wrapper__09f82 {
+    display: none;
+}
+
+/* If you use a custom decor, try uncommenting this. You might prefer it Just add THIS to the comment --> */
+/* Makes buttons transparent
+ .container__37e49 * {
+    background-color: transparent !important;
+}
+
+/* Removes background color from custom decor without getting rid of the effects on your nameplate only. 
+.container_df39b2.fitInAccount_df39b2 {
+    background: none !important;
+}
+
 /* Current Game */
 .panel__5dec7.activityPanel__5e434 {
     background-color: var(--tt-bg-dark) !important;
