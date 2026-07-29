@@ -256,7 +256,7 @@
 
  /* -- Server list -- */
 
- /* Fix icon sizes - Originally written by @scattagain */
+ /* Revert Guild Bar - Originally written by @scattagain */
 
 
 :root {
@@ -354,6 +354,8 @@ nav[class*="guilds_"] {
         align-items: center;
 
         [class*="folderPreview__"] {
+            --custom-folder-preview-gap: 4px;
+            gap: var(--custom-folder-preview-gap);
             width: calc(var(--guildbar-folder-size) * (2/3) + var(--custom-folder-preview-gap));
             height: calc(var(--guildbar-folder-size) * (2/3) + var(--custom-folder-preview-gap));
         }
