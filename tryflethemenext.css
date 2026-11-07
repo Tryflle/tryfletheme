@@ -134,7 +134,7 @@
 }
 
 /* Pins */
-.messagesPopout_6bgemo.thin_tqapBM.scrollerBase_d125d2,.header_6bgemo,.footer_6bgemo {
+.messagesPopout_6bgemo.thin_tqapBM.scrollerBase_tqapBM,.header_6bgemo,.footer_6bgemo {
     background-color: var(--tt-bg-secondary) !important;
 }
 
@@ -167,10 +167,10 @@
 }
 
 /* Background */
-.messagesWrapper_8AE1Qq,.wrapper_d852db {
+.messagesWrapper_8AE1Qq,.wrapper_gFyPwI {
     background-color: var(--tt-bg-light) !important;
 }
-.scroller_Bce46W.thin_JFqgFB.scrollerBase__99f8c.fade_JFqgFB {
+.scroller_Bce46W.thin_JFqgFB.scrollerBase_JFqgFB.fade_JFqgFB {
     background-color: var(--tt-bg-secondary) !important;
 }
 .sidebarList_pog62O.sidebarListRounded_pog62O {
@@ -205,7 +205,7 @@
     margin-bottom: 7px !important;
 }
 /* Embeds */
-.embedWrapper_b7e1cb.embedFull_XyW1ZT.embed__623de.markup_ku1OHH {
+.embedWrapper_b7e1cb.embedFull_XyW1ZT.embed_XyW1ZT.markup_ku1OHH {
     background-color: var(--tt-bg-secondary) !important;
     border-radius: 5px !important;
 }
@@ -213,7 +213,7 @@
 .itemCard_-7KzVR.wrapper_o3hXTo.outer_ERB-Vv.padded_ERB-Vv.interactive_ERB-Vv {
     background-color: var(--tt-bg-dark) !important;
 }
-.theme-dark.theme-darker.images-dark.container_ybUK7Z.themed_ybUK7Z,.scroller_GNEh_C.thin_tqapBM.scrollerBase_d125d2 {
+.theme-dark.theme-darker.images-dark.container_ybUK7Z.themed_ybUK7Z,.scroller_GNEh_C.thin_tqapBM.scrollerBase_tqapBM {
     background-color: var(--tt-bg-secondary) !important;
 }
 .peopleColumn_zrUwGA {
@@ -221,7 +221,7 @@
 }
 
 /* Context Menu */
-.scroller_M3qk4j.thin_tqapBM.scrollerBase_d125d2 {
+.scroller_M3qk4j.thin_tqapBM.scrollerBase_tqapBM {
     background-color: var(--tt-bg-secondary);
 }
 
@@ -232,21 +232,21 @@
 
 /* -- Pickers -- */
 /* Emoji */
-.contentWrapper_58b0l2,.header_-sZhZn,.scroller_EwKtHG.list_6c9R7U.thin_tqapBM.scrollerBase_d125d2,.wrapper_kSdzCr.header_6c9R7U, .wrapper_fGpd5- {
+.contentWrapper_58b0l2,.header_-sZhZn,.scroller_EwKtHG.list_6c9R7U.thin_tqapBM.scrollerBase_tqapBM,.wrapper_kSdzCr.header_6c9R7U, .wrapper_fGpd5- {
     background-color: var(--tt-bg-light) !important;
 }
-.searchBar_c0e32c.container_a45028.medium_a45028, .scroller_EwKtHG.none_tqapBM.scrollerBase_d125d2,.inspector_1bDrGE.inspector_-sZhZn,.unicodeShortcut_ufks4w {
+.searchBar_c0e32c.container_a45028.medium_a45028, .scroller_EwKtHG.none_tqapBM.scrollerBase_tqapBM,.inspector_1bDrGE.inspector_-sZhZn,.unicodeShortcut_ufks4w {
     background-color: var(--tt-bg-secondary) !important;
 }
 /* Sticker */
-.header_WSRqCO,.wrapper_kSdzCr.packHeader_e94b8c {
+.header_WSRqCO,.wrapper_kSdzCr.packHeader_dCw_12 {
     background-color: var(--tt-bg-light) !important;
 }
 .inspector_1bDrGE,.standardStickerShortcut_40yGEf,.container_a45028.medium_a45028 {
     background-color: var(--tt-bg-secondary) !important;
 }
 /* Gifs */
-.nav_58b0l2,.header_rfDq2B,.container_d2GpC2.thin_JFqgFB.scrollerBase__99f8c.fade_JFqgFB,.results_H8nOze.thin_JFqgFB.scrollerBase__99f8c.fade_JFqgFB,[class^="noResults_"] {
+.nav_58b0l2,.header_rfDq2B,.container_d2GpC2.thin_JFqgFB.scrollerBase_JFqgFB.fade_JFqgFB,.results_H8nOze.thin_JFqgFB.scrollerBase_JFqgFB.fade_JFqgFB,[class^="noResults_"] {
     background-color: var(--tt-bg-light) !important;
 }
 /* This removes the blur! --V */
@@ -508,7 +508,7 @@ nav.guilds_pog62O {
 
 /* -- Chatbox container -- */
 /* Commands */
-.scroller_EwKtHG.list_3dKq9h.thin_tqapBM.scrollerBase_d125d2,.wrapper_kSdzCr.categoryHeader_3dKq9h,.optionPillValue_T14dfz,.scroller_rg6La1.thin_tqapBM.scrollerBase_d125d2 {
+.scroller_EwKtHG.list_3dKq9h.thin_tqapBM.scrollerBase_tqapBM,.wrapper_kSdzCr.categoryHeader_3dKq9h,.optionPillValue_T14dfz,.scroller_rg6La1.thin_tqapBM.scrollerBase_tqapBM {
     background-color: var(--tt-bg-light) !important;
     border-radius:10px;
 }
@@ -522,7 +522,7 @@ nav.guilds_pog62O {
     border-radius:10px;
 }
 /* Typing size and color */
-.base_b88801 {
+.base_U9Tvvz {
    font-size: 14px !important;
    color: white !important;
 }
@@ -609,7 +609,7 @@ nav.guilds_pog62O {
 }
 
   
-.channelAttachmentArea_iH8bsl.scrollbarGhost_s8JExU.scrollbar_da3286 {
+.channelAttachmentArea_iH8bsl.scrollbarGhost_s8JExU.scrollbar_s8JExU {
     background-color: var(--tt-bg-secondary) !important;
 }
 
@@ -621,9 +621,8 @@ div[class*="app-launcher-entrypoint"] {
     display: none;
 }
 
-.chatTypingGradientAtBottom_8AE1Qq.chatGradientBase_8AE1Qq {
+.chatTypingGradientNotAtBottom_8AE1Qq.chatGradientBase_8AE1Qq, .chatTypingGradientAtBottom_8AE1Qq.chatGradientBase_8AE1Qq {
     display: none !important;
-    background-color: transparent !important;
 }
 
 /* Fix for the bottom aligned chatbar experiment. */ 
@@ -700,7 +699,7 @@ div[class*="app-launcher-entrypoint"] {
 /* -- Settings -- */
 
 /* Background */
-.contentColumn_jnk11m.contentColumnDefault_jnk11m,.contentRegionScroller_jnk11m.contentRegionShownSidebar_jnk11m.auto_tqapBM.scrollerBase_d125d2, .bar_3zSH5d.systemBar_3zSH5d.fixed_3zSH5d.show_3zSH5d {
+.contentColumn_jnk11m.contentColumnDefault_jnk11m,.contentRegionScroller_jnk11m.contentRegionShownSidebar_jnk11m.auto_tqapBM.scrollerBase_tqapBM, .bar_3zSH5d.systemBar_3zSH5d.fixed_3zSH5d.show_3zSH5d {
     background-color: var(--tt-bg-secondary);
 }
 
@@ -719,7 +718,7 @@ div[class*="app-launcher-entrypoint"] {
 }
 
 /* Checkbox Setting Enabled */
-.container_GNAYPB.checked__3f21e {
+.container__3f21e.checked__3f21e {
     background-color: #b593e0 !important;
 }
 
